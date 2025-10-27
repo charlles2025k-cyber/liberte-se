@@ -39,6 +39,18 @@ const itemVariants = {
   }
 };
 
+const BackgroundIcon = ({ icon: Icon, className, delay }: { icon: React.ElementType, className: string, delay: number }) => (
+  <motion.div
+    className={`absolute text-primary/10 ${className}`}
+    initial={{ opacity: 0, scale: 0.5, y: 50 }}
+    whileInView={{ opacity: 0.05, scale: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.5 }}
+    transition={{ duration: 0.8, delay, ease: 'easeOut' }}
+  >
+    <Icon className="h-full w-full" />
+  </motion.div>
+);
+
 export default function BenefitsSection() {
   const targetRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -50,8 +62,14 @@ export default function BenefitsSection() {
   const arrowOpacity = useTransform(scrollYProgress, [0.85, 0.9], [0, 1]);
 
   return (
-    <section className="py-20 md:py-24 bg-transparent">
-      <div className="container mx-auto px-4">
+    <section className="py-20 md:py-24 bg-transparent relative overflow-hidden">
+       <div className="absolute inset-0 z-0">
+        <BackgroundIcon icon={Target} className="w-40 h-40 top-[-20%] left-[-5%]" delay={0.2} />
+        <BackgroundIcon icon={ShieldCheck} className="w-56 h-56 top-[50%] right-[-10%] transform rotate-45" delay={0.4} />
+        <BackgroundIcon icon={Banknote} className="w-32 h-32 bottom-[-25%] left-[5%]" delay={0.6} />
+        <BackgroundIcon icon={Smile} className="w-24 h-24 top-[10%] right-[15%] transform rotate-12" delay={0.8} />
+      </div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-headline font-bold">O que você vai conquistar?</h2>
           <p className="mt-4 text-lg text-muted-foreground">
