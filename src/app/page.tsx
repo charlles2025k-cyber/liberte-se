@@ -9,12 +9,10 @@ import GuaranteeSection from '@/components/landing/GuaranteeSection';
 import FaqSection from '@/components/landing/FaqSection';
 import Footer from '@/components/landing/Footer';
 import AnimatedSection from '@/components/landing/AnimatedSection';
-import Header from '@/components/landing/Header';
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-dvh bg-gradient-dark-blue text-foreground overflow-x-hidden">
-      <Header />
       <main className="flex-grow">
         <HeroSection />
         <AnimatedSection id="dores">
