@@ -10,7 +10,7 @@ const FeatureList = ({ features, check }: { features: string[], check: 'yes' | '
         {check === 'yes' ? (
           <CheckCircle className="h-5 w-5 text-primary" />
         ) : (
-          <XCircle className="h-5 w-5 text-destructive" />
+          <XCircle className="h-5 w-5 text-muted-foreground/50" />
         )}
         <span className="text-muted-foreground">{feature}</span>
       </li>
@@ -29,7 +29,7 @@ export default function ComparisonSection() {
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <Card className="border-destructive/50 bg-card/80">
+          <Card className="border-border/50 bg-card/80">
             <CardHeader>
               <CardTitle className="font-headline text-2xl text-center">Terapia Tradicional</CardTitle>
             </CardHeader>
@@ -45,7 +45,7 @@ export default function ComparisonSection() {
                 check="no"
               />
               <div className="mt-6 text-center">
-                <p className="text-4xl font-bold font-headline text-destructive line-through">R$ 200 - R$ 500</p>
+                <p className="text-4xl font-bold font-headline text-muted-foreground/80 line-through">R$ 200 - R$ 500</p>
                 <p className="text-muted-foreground">por sessão</p>
               </div>
             </CardContent>

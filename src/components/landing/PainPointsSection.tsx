@@ -1,27 +1,27 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CircleDollarSign, BrainCircuit, HeartCrack, EyeOff } from "lucide-react";
+import { CircleDollarSign, BrainCircuit, HeartCrack, EyeOff, ShieldCheck } from "lucide-react";
 import { motion } from "framer-motion";
 
 const painPoints = [
   {
-    icon: <EyeOff className="h-10 w-10 text-destructive" />,
+    icon: <EyeOff className="h-10 w-10 text-primary" />,
     title: "Mentiras e Segredos",
     description: "Esconder o vício de quem você ama, vivendo uma vida dupla e solitária."
   },
   {
-    icon: <BrainCircuit className="h-10 w-10 text-destructive" />,
+    icon: <BrainCircuit className="h-10 w-10 text-primary" />,
     title: "Ansiedade e Compulsão",
     description: "A necessidade incontrolável de apostar, mesmo sabendo das consequências devastadoras."
   },
   {
-    icon: <HeartCrack className="h-10 w-10 text-destructive" />,
+    icon: <HeartCrack className="h-10 w-10 text-primary" />,
     title: "Culpa e Arrependimento",
     description: "O peso esmagador da culpa após cada perda, prometendo a si mesmo que será a última vez."
   },
   {
-    icon: <CircleDollarSign className="h-10 w-10 text-destructive" />,
+    icon: <CircleDollarSign className="h-10 w-10 text-primary" />,
     title: "Dívidas Crescentes",
     description: "Ver o dinheiro que deveria sustentar sua família desaparecer, criando um buraco financeiro cada vez maior."
   }
