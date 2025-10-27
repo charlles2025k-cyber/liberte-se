@@ -47,6 +47,7 @@ export default function BenefitsSection() {
   });
 
   const scaleY = useTransform(scrollYProgress, [0.1, 0.9], [0, 1]);
+  const arrowOpacity = useTransform(scrollYProgress, [0.85, 0.9], [0, 1]);
 
   return (
     <section className="py-20 md:py-24 bg-transparent">
@@ -64,7 +65,7 @@ export default function BenefitsSection() {
             aria-hidden="true"
           />
           
-          <div className="space-y-12">
+          <div className="space-y-12 relative">
             {benefits.map((benefit, index) => (
               <motion.div
                 key={index}
@@ -83,6 +84,13 @@ export default function BenefitsSection() {
                 </div>
               </motion.div>
             ))}
+            <motion.div 
+              className="absolute bottom-0 left-[26px] w-4 h-4"
+              style={{ opacity: arrowOpacity }}
+              aria-hidden="true"
+            >
+              <div className="w-0 h-0 border-l-4 border-l-transparent border-r-4 border-r-transparent border-t-[8px] border-t-primary/80 absolute bottom-[-8px] left-1/2 -translate-x-1/2"></div>
+            </motion.div>
           </div>
         </div>
       </div>
