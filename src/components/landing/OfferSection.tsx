@@ -24,10 +24,10 @@ export default function OfferSection() {
     <section className="py-20 md:py-24 bg-card/50">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-headline font-bold text-foreground">
+          <h2 className="text-3xl md:text-5xl font-headline font-bold text-foreground leading-tight">
             Escolha o plano ideal para sua
             <br />
-            <span className="text-primary">libertação</span>
+            <span className="text-primary mt-2 inline-block">libertação</span>
           </h2>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground">
             Invista em você e dê o primeiro passo para uma vida livre do vício. A decisão é sua, o apoio é nosso.
