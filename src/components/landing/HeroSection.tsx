@@ -37,7 +37,7 @@ export default function HeroSection() {
               width={500}
               height={500}
               priority
-              className="max-w-xs md:max-w-sm"
+              className="max-w-sm md:max-w-md"
               data-ai-hint="man breaking chains gambling addiction"
             />
           </motion.div>
