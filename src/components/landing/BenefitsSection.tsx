@@ -1,7 +1,8 @@
 "use client";
 
 import { ShieldCheck, Target, Banknote, Smile } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 const benefits = [
   {
@@ -39,6 +40,14 @@ const itemVariants = {
 };
 
 export default function BenefitsSection() {
+  const targetRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ["start end", "end start"]
+  });
+
+  const scaleY = useTransform(scrollYProgress, [0.1, 0.9], [0, 1]);
+
   return (
     <section className="py-20 md:py-24 bg-transparent">
       <div className="container mx-auto px-4">
@@ -48,8 +57,12 @@ export default function BenefitsSection() {
             Este método vai te equipar com as ferramentas necessárias para uma transformação completa e duradoura.
           </p>
         </div>
-        <div className="mt-16 max-w-4xl mx-auto relative">
-          <div className="absolute left-7 top-7 bottom-7 w-0.5 bg-border/50" aria-hidden="true"></div>
+        <div ref={targetRef} className="mt-16 max-w-4xl mx-auto relative">
+          <motion.div 
+            style={{ scaleY }}
+            className="absolute left-7 top-0 bottom-0 w-0.5 bg-border/50 origin-top" 
+            aria-hidden="true"
+          />
           
           <div className="space-y-12">
             {benefits.map((benefit, index) => (
