@@ -15,11 +15,21 @@ export default function HeroSection() {
     >
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center text-center">
+          <motion.h1
+            className="text-4xl md:text-6xl font-headline font-bold text-foreground leading-tight"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          >
+            As apostas não roubam só o seu dinheiro.
+            <br />
+            <span className="text-primary">Elas destroem sua paz e sua família.</span>
+          </motion.h1>
           <motion.div
-            className="mb-8"
+            className="my-8"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           >
             <Image
               src="https://i.postimg.cc/ZKRGYCPW/Chat-GPT-Image-27-de-out-de-2025-19-34-37.png"
@@ -31,16 +41,6 @@ export default function HeroSection() {
               data-ai-hint="man breaking chains gambling addiction"
             />
           </motion.div>
-          <motion.h1
-            className="text-4xl md:text-6xl font-headline font-bold text-foreground leading-tight"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-          >
-            As apostas não roubam só o seu dinheiro.
-            <br />
-            <span className="text-primary">Elas destroem sua paz e sua família.</span>
-          </motion.h1>
           <motion.p
             className="mt-6 text-lg md:text-xl text-muted-foreground max-w-3xl"
             initial={{ opacity: 0, y: 20 }}
