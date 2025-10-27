@@ -2,6 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
+import { motion } from "framer-motion";
 
 const testimonials = [
   {
@@ -29,6 +30,11 @@ const StarRating = ({ rating = 5 }: { rating?: number }) => (
   </div>
 );
 
+const cardVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 }
+};
+
 export default function TestimonialsSection() {
   return (
     <section className="py-20 md:py-24 bg-card/50">
@@ -40,19 +46,28 @@ export default function TestimonialsSection() {
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial) => (
-            <Card key={testimonial.name} className="bg-card/80 border-border/50 flex flex-col hover:scale-105 transition-transform duration-300">
-              <CardContent className="p-6 flex-grow flex flex-col">
-                <StarRating />
-                <blockquote className="mt-4 text-muted-foreground flex-grow">
-                  “{testimonial.quote}”
-                </blockquote>
-                <footer className="mt-6">
-                  <p className="font-bold font-headline text-foreground">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.location}</p>
-                </footer>
-              </CardContent>
-            </Card>
+          {testimonials.map((testimonial, index) => (
+            <motion.div
+              key={testimonial.name}
+              variants={cardVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <Card className="bg-card/80 border-border/50 flex flex-col hover:scale-105 transition-transform duration-300 h-full">
+                <CardContent className="p-6 flex-grow flex flex-col">
+                  <StarRating />
+                  <blockquote className="mt-4 text-muted-foreground flex-grow">
+                    “{testimonial.quote}”
+                  </blockquote>
+                  <footer className="mt-6">
+                    <p className="font-bold font-headline text-foreground">{testimonial.name}</p>
+                    <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                  </footer>
+                </CardContent>
+              </Card>
+            </motion.div>
           ))}
         </div>
       </div>

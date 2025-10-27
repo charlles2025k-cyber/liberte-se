@@ -2,6 +2,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CircleDollarSign, BrainCircuit, HeartCrack, EyeOff } from "lucide-react";
+import { motion } from "framer-motion";
 
 const painPoints = [
   {
@@ -26,6 +27,11 @@ const painPoints = [
   }
 ];
 
+const cardVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 }
+};
+
 export default function PainPointsSection() {
   return (
     <section className="py-20 md:py-24 bg-transparent">
@@ -37,16 +43,25 @@ export default function PainPointsSection() {
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {painPoints.map((point) => (
-            <Card key={point.title} className="bg-card/80 border-border/50 text-center hover:border-primary transition-colors duration-300 hover:scale-105">
-              <CardHeader className="items-center">
-                {point.icon}
-                <CardTitle className="mt-4 font-headline text-xl">{point.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">{point.description}</p>
-              </CardContent>
-            </Card>
+          {painPoints.map((point, index) => (
+            <motion.div
+              key={point.title}
+              variants={cardVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <Card className="bg-card/80 border-border/50 text-center hover:border-primary transition-colors duration-300 hover:scale-105 h-full">
+                <CardHeader className="items-center">
+                  {point.icon}
+                  <CardTitle className="mt-4 font-headline text-xl">{point.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{point.description}</p>
+                </CardContent>
+              </Card>
+            </motion.div>
           ))}
         </div>
       </div>
