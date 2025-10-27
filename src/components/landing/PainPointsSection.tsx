@@ -42,7 +42,7 @@ export default function PainPointsSection() {
             Milhões de pessoas enfrentam a mesma dor. Reconhecer esses sinais é o primeiro passo para a libertação.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {painPoints.map((point, index) => (
             <motion.div
               key={point.title}
