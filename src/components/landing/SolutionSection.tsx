@@ -4,16 +4,20 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
+import { BookOpen, Target, BrainCircuit, ShieldCheck } from 'lucide-react';
 
-const BackgroundShape = ({ className, delay }: { className: string; delay: number }) => (
+const BackgroundIcon = ({ icon: Icon, className, delay }: { icon: React.ElementType, className: string, delay: number }) => (
   <motion.div
-    className={`absolute opacity-5 ${className}`}
+    className={`absolute text-primary/10 ${className}`}
     initial={{ opacity: 0, scale: 0.5, y: 50 }}
     whileInView={{ opacity: 0.05, scale: 1, y: 0 }}
     viewport={{ once: true, amount: 0.5 }}
     transition={{ duration: 0.8, delay, ease: 'easeOut' }}
-  />
+  >
+    <Icon className="h-full w-full" />
+  </motion.div>
 );
+
 
 export default function SolutionSection() {
   const guideImage = PlaceHolderImages.find(p => p.id === 'ebook-cover-3d');
@@ -21,10 +25,10 @@ export default function SolutionSection() {
   return (
     <section className="py-20 md:py-24 bg-card/50 relative overflow-hidden">
        <div className="absolute inset-0 z-0">
-        <BackgroundShape className="w-40 h-40 bg-primary/50 rounded-full top-[-20%] left-[-5%]" delay={0.2} />
-        <BackgroundShape className="w-56 h-56 border-2 border-primary/50 rounded-lg top-[50%] left-[25%] transform rotate-45" delay={0.4} />
-        <BackgroundShape className="w-32 h-32 bg-primary/30 rounded-full bottom-[-25%] right-[5%]" delay={0.6} />
-        <BackgroundShape className="w-24 h-24 border-4 border-primary/30 rounded-xl top-[10%] right-[15%] transform rotate-12" delay={0.8} />
+        <BackgroundIcon icon={BookOpen} className="w-40 h-40 top-[-20%] left-[-5%]" delay={0.2} />
+        <BackgroundIcon icon={Target} className="w-56 h-56 top-[50%] left-[25%] transform rotate-45" delay={0.4} />
+        <BackgroundIcon icon={BrainCircuit} className="w-32 h-32 bottom-[-25%] right-[5%]" delay={0.6} />
+        <BackgroundIcon icon={ShieldCheck} className="w-24 h-24 top-[10%] right-[15%] transform rotate-12" delay={0.8} />
       </div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
