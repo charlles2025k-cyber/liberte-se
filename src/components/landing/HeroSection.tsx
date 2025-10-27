@@ -23,11 +23,12 @@ export default function HeroSection() {
           >
             <Image
               src="https://i.postimg.cc/ZKRGYCPW/Chat-GPT-Image-27-de-out-de-2025-19-34-37.png"
-              alt="Capa 3D do e-book Superando o Vício em Apostas Online"
+              alt="Homem quebrando uma corrente para se libertar do vício em apostas"
               width={500}
               height={500}
               priority
-              data-ai-hint="ebook cover 3d"
+              className="max-w-xs md:max-w-sm"
+              data-ai-hint="man breaking chains gambling addiction"
             />
           </motion.div>
           <motion.h1
