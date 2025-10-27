@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import {
   CircleDollarSign,
-  HeartCrack,
+  Banknote,
   ShieldCheck,
   LockOpen,
-  Gamepad2,
-  Smartphone,
+  CreditCard,
+  TrendingDown,
 } from "lucide-react";
 
 const BackgroundIcon = ({ icon: Icon, className, delay }: { icon: React.ElementType, className: string, delay: number }) => (
@@ -27,16 +27,16 @@ export default function HeroSection() {
   return (
     <motion.section
       id="inicio"
-      className="relative py-20 md:py-24 bg-transparent overflow-hidden"
+      className="relative py-12 md:py-20 bg-transparent overflow-hidden"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <div className="absolute inset-0 z-0 opacity-50 blur-sm">
         <BackgroundIcon icon={CircleDollarSign} className="h-24 w-24 top-[10%] left-[5%]" delay={0.9} />
-        <BackgroundIcon icon={HeartCrack} className="h-20 w-20 top-[15%] right-[10%]" delay={1.1} />
-        <BackgroundIcon icon={Gamepad2} className="h-28 w-28 top-[50%] left-[15%]" delay={1.3} />
-        <BackgroundIcon icon={Smartphone} className="h-16 w-16 top-[60%] right-[5%]" delay={1.0} />
+        <BackgroundIcon icon={TrendingDown} className="h-20 w-20 top-[15%] right-[10%]" delay={1.1} />
+        <BackgroundIcon icon={Banknote} className="h-28 w-28 top-[50%] left-[15%]" delay={1.3} />
+        <BackgroundIcon icon={CreditCard} className="h-16 w-16 top-[60%] right-[5%]" delay={1.0} />
         <BackgroundIcon icon={LockOpen} className="h-32 w-32 bottom-[10%] left-[10%] text-primary/10" delay={1.5} />
         <BackgroundIcon icon={ShieldCheck} className="h-24 w-24 bottom-[5%] right-[15%] text-primary/10" delay={1.7} />
       </div>
@@ -54,7 +54,7 @@ export default function HeroSection() {
             <span className="text-primary">Elas destroem sua paz e sua família.</span>
           </motion.h1>
           <motion.p
-            className="mt-6 text-lg md:text-xl text-muted-foreground max-w-3xl"
+            className="mt-4 text-lg md:text-xl text-muted-foreground max-w-3xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
@@ -62,7 +62,7 @@ export default function HeroSection() {
             Chegou a hora de dar um basta. Recupere o controle da sua vida e encontre a paz que você tanto merece com um método comprovado e acessível.
           </motion.p>
           <motion.div
-            className="mt-4"
+            className="mt-6 mb-4"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
@@ -70,15 +70,15 @@ export default function HeroSection() {
             <Image
               src="https://i.postimg.cc/ZKRGYCPW/Chat-GPT-Image-27-de-out-de-2025-19-34-37.png"
               alt="Homem quebrando uma corrente para se libertar do vício em apostas"
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               priority
-              className="max-w-xs md:max-w-sm"
+              className="max-w-sm md:max-w-md"
               data-ai-hint="man breaking chains gambling addiction"
             />
           </motion.div>
           <motion.div
-            className="flex flex-col items-center mt-2"
+            className="flex flex-col items-center mt-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
