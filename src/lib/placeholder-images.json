@@ -5,6 +5,12 @@
       "description": "Capa do e-book Superando o vício em apostas online",
       "imageUrl": "https://storage.googleapis.com/stablediffusion-417819/requests/dd529063-a6db-485a-8af3-23a571285263/0_0.png",
       "imageHint": "ebook cover man"
+    },
+    {
+      "id": "ebook-cover-3d",
+      "description": "Capa 3D do e-book Superando o Vício em Apostas Online",
+      "imageUrl": "https://i.postimg.cc/J4Drh6M0/Captura-de-tela-2025-10-27-185951.png",
+      "imageHint": "ebook cover 3d"
     }
   ]
 }
