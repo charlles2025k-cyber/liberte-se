@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "guide-mockup",
-      "description": "Mockup of the digital guide 'Liberte-se'",
-      "imageUrl": "https://images.unsplash.com/photo-1740077163812-79c445d33e8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZWJvb2slMjBjb3ZlcnxlbnwwfHx8fDE3NjE1MTUzMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "ebook cover"
+      "description": "Capa do e-book Superando o vício em apostas online",
+      "imageUrl": "https://storage.googleapis.com/stablediffusion-417819/requests/8525b64c-31b3-40e1-8898-75f80c58e5e8/0_0.png",
+      "imageHint": "ebook cover man"
     }
   ]
 }

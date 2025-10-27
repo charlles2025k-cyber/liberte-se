@@ -15,7 +15,7 @@ export default function SolutionSection() {
               <span className="text-primary block">Retomar o Controle</span>
             </h2>
             <p className="mt-6 text-lg text-muted-foreground">
-              O <span className="font-bold text-foreground">Guia Digital Liberte-se</span> não é apenas um livro, é um método passo a passo, prático e humano, desenhado para atacar a raiz do problema e te devolver o poder de escolha.
+              O <span className="font-bold text-foreground">Superando o vício em apostas online</span> não é apenas um livro, é um método passo a passo, prático e humano, desenhado para atacar a raiz do problema e te devolver o poder de escolha.
             </p>
             <p className="mt-4 text-muted-foreground">
               Sem julgamentos, sem promessas milagrosas. Apenas ferramentas eficazes que já transformaram a vida de centenas de pessoas, e que agora estão ao seu alcance.
