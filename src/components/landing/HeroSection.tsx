@@ -61,7 +61,7 @@ export default function HeroSection() {
               alt="Capa 3D do e-book Superando o Vício em Apostas Online"
               width={500}
               height={500}
-              className="rounded-lg shadow-2xl shadow-primary/20"
+              className=""
               priority
               data-ai-hint="ebook cover 3d"
             />
