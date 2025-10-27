@@ -55,40 +55,44 @@ export default function OfferSection() {
           </Card>
 
           {/* Plano Completo */}
-          <Card className="border-primary border-2 shadow-2xl shadow-primary/20 bg-card relative overflow-hidden flex flex-col h-full">
-            <div className="bg-primary text-primary-foreground font-bold py-1 px-4 absolute top-4 right-[-45px] rotate-45 text-sm">
-              MAIS POPULAR
-            </div>
-            <CardHeader className="text-center pt-8">
-              <CardTitle className="font-headline text-3xl">Plano Completo</CardTitle>
-              <CardDescription>A transformação completa com apoio contínuo</CardDescription>
-            </CardHeader>
-            <CardContent className="flex flex-col flex-grow">
-              <div className="text-center my-4">
-                <p className="text-lg text-muted-foreground">de <span className="line-through">R$ 197,00</span> por</p>
-                <p className="text-5xl md:text-6xl font-bold font-headline text-primary">
-                  R$ 47,90
-                </p>
-                <p className="text-muted-foreground">Pagamento único</p>
+          <div className="relative">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+              <div className="bg-primary text-primary-foreground font-bold py-1 px-4 rounded-full text-sm shadow-lg">
+                MAIS POPULAR
               </div>
-              <ul className="space-y-3 my-6 flex-grow">
-                {CompletePlanFeatures.map((feature, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                    <span className="text-foreground">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-              <Button
-                size="lg"
-                className="mt-8 w-full h-16 text-xl font-bold bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_25px_hsl(var(--primary)/0.6)] hover:shadow-[0_0_40px_hsl(var(--primary)/0.8)] transition-all duration-300 animate-pulse-slow"
-              >
-                <Zap className="mr-2 h-6 w-6" />
-                QUERO O PLANO COMPLETO
-              </Button>
-              <p className="mt-4 text-sm text-muted-foreground text-center">Acesso imediato e 100% seguro.</p>
-            </CardContent>
-          </Card>
+            </div>
+            <Card className="border-primary border-2 shadow-2xl shadow-primary/20 bg-card flex flex-col h-full">
+              <CardHeader className="text-center pt-8">
+                <CardTitle className="font-headline text-3xl">Plano Completo</CardTitle>
+                <CardDescription>A transformação completa com apoio contínuo</CardDescription>
+              </CardHeader>
+              <CardContent className="flex flex-col flex-grow">
+                <div className="text-center my-4">
+                  <p className="text-lg text-muted-foreground">de <span className="line-through">R$ 197,00</span> por</p>
+                  <p className="text-5xl md:text-6xl font-bold font-headline text-primary">
+                    R$ 47,90
+                  </p>
+                  <p className="text-muted-foreground">Pagamento único</p>
+                </div>
+                <ul className="space-y-3 my-6 flex-grow">
+                  {CompletePlanFeatures.map((feature, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                      <span className="text-foreground">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Button
+                  size="lg"
+                  className="mt-8 w-full h-16 text-xl font-bold bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_25px_hsl(var(--primary)/0.6)] hover:shadow-[0_0_40px_hsl(var(--primary)/0.8)] transition-all duration-300 animate-pulse-slow"
+                >
+                  <Zap className="mr-2 h-6 w-6" />
+                  QUERO O PLANO COMPLETO
+                </Button>
+                <p className="mt-4 text-sm text-muted-foreground text-center">Acesso imediato e 100% seguro.</p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </section>
