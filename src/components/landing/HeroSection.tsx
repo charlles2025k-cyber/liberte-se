@@ -26,7 +26,7 @@ export default function HeroSection() {
             <span className="text-primary">Elas destroem sua paz e sua família.</span>
           </motion.h1>
           <motion.div
-            className="my-8"
+            className="my-4"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
@@ -42,7 +42,7 @@ export default function HeroSection() {
             />
           </motion.div>
           <motion.p
-            className="mt-6 text-lg md:text-xl text-muted-foreground max-w-3xl"
+            className="mt-4 text-lg md:text-xl text-muted-foreground max-w-3xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
@@ -50,7 +50,7 @@ export default function HeroSection() {
             Chegou a hora de dar um basta. Recupere o controle da sua vida e encontre a paz que você tanto merece com um método comprovado e acessível.
           </motion.p>
           <motion.div
-            className="mt-10 flex flex-col items-center"
+            className="mt-8 flex flex-col items-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
