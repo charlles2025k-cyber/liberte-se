@@ -8,7 +8,7 @@ export default function HeroSection() {
   return (
     <motion.section
       id="inicio"
-      className="py-20 md:py-32 bg-transparent"
+      className="py-20 md:py-24 bg-transparent"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -26,7 +26,7 @@ export default function HeroSection() {
             <span className="text-primary">Elas destroem sua paz e sua família.</span>
           </motion.h1>
           <motion.p
-            className="mt-4 mb-6 text-lg md:text-xl text-muted-foreground max-w-3xl"
+            className="mt-4 mb-8 text-lg md:text-xl text-muted-foreground max-w-3xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
@@ -34,7 +34,7 @@ export default function HeroSection() {
             Chegou a hora de dar um basta. Recupere o controle da sua vida e encontre a paz que você tanto merece com um método comprovado e acessível.
           </motion.p>
           <motion.div
-            className="mb-4"
+            className="mb-8"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
@@ -45,12 +45,12 @@ export default function HeroSection() {
               width={500}
               height={500}
               priority
-              className="max-w-sm md:max-w-md"
+              className="max-w-xs md:max-w-sm"
               data-ai-hint="man breaking chains gambling addiction"
             />
           </motion.div>
           <motion.div
-            className="mt-4 flex flex-col items-center"
+            className="flex flex-col items-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
