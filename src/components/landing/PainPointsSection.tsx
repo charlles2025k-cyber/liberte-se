@@ -51,8 +51,16 @@ export default function PainPointsSection() {
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="relative group"
             >
-              <Card className="bg-card/80 border-border/50 text-center hover:border-primary transition-colors duration-300 hover:scale-105 h-full">
+              <motion.div
+                className="absolute -top-5 left-1/2 -translate-x-1/2 z-10 flex items-center justify-center w-10 h-10 bg-primary text-primary-foreground font-bold text-lg rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                initial={{ scale: 0.5 }}
+                whileHover={{ scale: 1.1 }}
+              >
+                {index + 1}
+              </motion.div>
+              <Card className="bg-card/80 border-border/50 text-center group-hover:border-primary transition-colors duration-300 group-hover:scale-105 h-full pt-8">
                 <CardHeader className="items-center">
                   {point.icon}
                   <CardTitle className="mt-4 font-headline text-xl">{point.title}</CardTitle>
