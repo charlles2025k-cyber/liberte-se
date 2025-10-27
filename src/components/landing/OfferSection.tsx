@@ -18,7 +18,7 @@ const CompletePlanFeatures = [
 
 export default function OfferSection() {
   return (
-    <section id="oferta" className="py-20 md:py-24 bg-card/50">
+    <section className="py-20 md:py-24 bg-card/50">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-headline font-bold text-foreground">Escolha o plano ideal para sua libertação</h2>

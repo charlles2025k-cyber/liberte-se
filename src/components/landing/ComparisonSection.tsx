@@ -18,7 +18,7 @@ const FeatureList = ({ features, check }: { features: string[], check: 'yes' | '
 
 export default function ComparisonSection() {
   return (
-    <section id="comparativo" className="py-20 md:py-24 bg-transparent">
+    <section className="py-20 md:py-24 bg-transparent">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-headline font-bold">Uma decisão inteligente para uma mudança imediata</h2>

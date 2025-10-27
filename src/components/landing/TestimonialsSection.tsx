@@ -29,7 +29,7 @@ const StarRating = ({ rating = 5 }: { rating?: number }) => (
 
 export default function TestimonialsSection() {
   return (
-    <section id="depoimentos" className="py-20 md:py-24 bg-card/50">
+    <section className="py-20 md:py-24 bg-card/50">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-headline font-bold">A prova de que a mudança é real</h2>
@@ -39,7 +39,7 @@ export default function TestimonialsSection() {
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
-            <Card key={testimonial.name} className="bg-card/80 border-border/50 flex flex-col">
+            <Card key={testimonial.name} className="bg-card/80 border-border/50 flex flex-col hover:scale-105 transition-transform duration-300">
               <CardContent className="p-6 flex-grow flex flex-col">
                 <StarRating />
                 <blockquote className="mt-4 text-muted-foreground flex-grow">
