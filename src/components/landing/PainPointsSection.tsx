@@ -1,3 +1,5 @@
+"use client";
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CircleDollarSign, BrainCircuit, HeartCrack, EyeOff } from "lucide-react";
 

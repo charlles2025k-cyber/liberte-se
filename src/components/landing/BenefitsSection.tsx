@@ -1,3 +1,5 @@
+"use client";
+
 import { ShieldCheck, Target, Banknote, Smile } from "lucide-react";
 
 const benefits = [
