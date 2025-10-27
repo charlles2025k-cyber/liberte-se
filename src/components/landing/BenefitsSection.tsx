@@ -1,6 +1,7 @@
 "use client";
 
 import { ShieldCheck, Target, Banknote, Smile } from "lucide-react";
+import { motion } from "framer-motion";
 
 const benefits = [
   {
@@ -25,6 +26,18 @@ const benefits = [
   }
 ];
 
+const itemVariants = {
+  hidden: { opacity: 0, x: -20 },
+  visible: { 
+    opacity: 1, 
+    x: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut"
+    }
+  }
+};
+
 export default function BenefitsSection() {
   return (
     <section className="py-20 md:py-24 bg-transparent">
@@ -35,18 +48,29 @@ export default function BenefitsSection() {
             Este método vai te equipar com as ferramentas necessárias para uma transformação completa e duradoura.
           </p>
         </div>
-        <div className="mt-12 max-w-4xl mx-auto space-y-8">
-          {benefits.map((benefit, index) => (
-            <div key={index} className="flex items-start gap-6">
-              <div className="flex-shrink-0 bg-primary/10 p-3 rounded-full">
-                {benefit.icon}
-              </div>
-              <div>
-                <h3 className="text-xl font-headline font-bold">{benefit.title}</h3>
-                <p className="mt-1 text-muted-foreground">{benefit.description}</p>
-              </div>
-            </div>
-          ))}
+        <div className="mt-16 max-w-4xl mx-auto relative">
+          <div className="absolute left-7 top-7 bottom-7 w-0.5 bg-border/50" aria-hidden="true"></div>
+          
+          <div className="space-y-12">
+            {benefits.map((benefit, index) => (
+              <motion.div
+                key={index}
+                className="flex items-start gap-6 relative"
+                variants={itemVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+              >
+                <div className="flex-shrink-0 bg-card p-3 rounded-full border-2 border-primary/50 z-10 shadow-lg shadow-primary/10">
+                  {benefit.icon}
+                </div>
+                <div>
+                  <h3 className="text-xl font-headline font-bold">{benefit.title}</h3>
+                  <p className="mt-1 text-muted-foreground">{benefit.description}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
