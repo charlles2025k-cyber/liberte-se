@@ -3,7 +3,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 
 export default function SolutionSection() {
-  const guideImage = PlaceHolderImages.find(p => p.id === 'guide-mockup');
+  const guideImage = PlaceHolderImages.find(p => p.id === 'ebook-cover-3d');
 
   return (
     <section className="py-20 md:py-24 bg-card/50">
@@ -30,8 +30,8 @@ export default function SolutionSection() {
                 src={guideImage.imageUrl}
                 alt={guideImage.description}
                 data-ai-hint={guideImage.imageHint}
-                width={400}
-                height={533}
+                width={500}
+                height={500}
                 className="rounded-lg shadow-2xl shadow-primary/20 transform hover:scale-105 transition-transform duration-500"
               />
             )}
