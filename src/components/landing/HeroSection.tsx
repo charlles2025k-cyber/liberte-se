@@ -37,7 +37,7 @@ export default function HeroSection() {
                 data-ai-hint={coverImage.imageHint}
                 width={500}
                 height={500}
-                className="rounded-lg shadow-2xl shadow-primary/20 transform hover:scale-105 transition-transform duration-500"
+                className="rounded-lg shadow-2xl shadow-primary/20"
                 priority
               />
             )}

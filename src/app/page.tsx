@@ -1,4 +1,3 @@
-import Header from '@/components/landing/Header';
 import HeroSection from '@/components/landing/HeroSection';
 import PainPointsSection from '@/components/landing/PainPointsSection';
 import SolutionSection from '@/components/landing/SolutionSection';
@@ -13,7 +12,6 @@ import Footer from '@/components/landing/Footer';
 export default function Home() {
   return (
     <div className="flex flex-col min-h-dvh bg-gradient-dark-blue text-foreground">
-      <Header />
       <main className="flex-grow">
         <HeroSection />
         <PainPointsSection />
