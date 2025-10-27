@@ -25,7 +25,7 @@ const benefits = [
 
 export default function BenefitsSection() {
   return (
-    <section id="beneficios" className="py-20 md:py-24 bg-background">
+    <section id="beneficios" className="py-20 md:py-24 bg-transparent">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-headline font-bold">O que você vai conquistar?</h2>

@@ -26,7 +26,7 @@ const painPoints = [
 
 export default function PainPointsSection() {
   return (
-    <section className="py-20 md:py-24 bg-background">
+    <section className="py-20 md:py-24 bg-transparent">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-headline font-bold">Você não está sozinho nessa luta</h2>
@@ -36,7 +36,7 @@ export default function PainPointsSection() {
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {painPoints.map((point) => (
-            <Card key={point.title} className="bg-card border-border/50 text-center hover:border-primary transition-colors duration-300">
+            <Card key={point.title} className="bg-card/80 border-border/50 text-center hover:border-primary transition-colors duration-300">
               <CardHeader className="items-center">
                 {point.icon}
                 <CardTitle className="mt-4 font-headline text-xl">{point.title}</CardTitle>

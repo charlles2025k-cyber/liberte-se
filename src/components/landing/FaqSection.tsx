@@ -38,7 +38,7 @@ export default function FaqSection() {
                         Esclareça os últimos pontos antes de tomar a decisão que vai mudar sua vida.
                     </p>
                 </div>
-                <Accordion type="single" collapsible className="w-full mt-12">
+                <Accordion type="single" collapsible className="w-full mt-12 bg-card/80 p-4 rounded-lg">
                     {faqs.map((faq, index) => (
                         <AccordionItem value={`item-${index}`} key={index}>
                             <AccordionTrigger className="text-left font-headline text-lg hover:no-underline">{faq.question}</AccordionTrigger>

@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function HeroSection() {
   return (
-    <section id="inicio" className="py-20 md:py-32 bg-card/50">
+    <section id="inicio" className="py-20 md:py-32 bg-transparent">
       <div className="container mx-auto px-4 text-center">
         <h1 className="text-4xl md:text-6xl font-headline font-bold text-foreground leading-tight max-w-4xl mx-auto">
           As apostas não roubam só o seu dinheiro.
@@ -15,7 +15,7 @@ export default function HeroSection() {
         <div className="mt-10">
           <Button
             size="lg"
-            className="h-14 px-8 text-lg font-bold bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_15px_hsl(var(--primary)/0.5)] hover:shadow-[0_0_25px_hsl(var(--primary)/0.7)] transition-all duration-300 animate-pulse-slow"
+            className="h-14 px-8 text-lg font-bold bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_25px_hsl(var(--primary)/0.6)] hover:shadow-[0_0_40px_hsl(var(--primary)/0.8)] transition-all duration-300 animate-pulse-slow"
             asChild
           >
             <a href="#oferta">Quero me libertar agora</a>

@@ -39,7 +39,7 @@ export default function TestimonialsSection() {
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
-            <Card key={testimonial.name} className="bg-card border-border/50 flex flex-col">
+            <Card key={testimonial.name} className="bg-card/80 border-border/50 flex flex-col">
               <CardContent className="p-6 flex-grow flex flex-col">
                 <StarRating />
                 <blockquote className="mt-4 text-muted-foreground flex-grow">
