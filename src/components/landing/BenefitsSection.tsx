@@ -17,7 +17,7 @@ const benefits = [
   },
   {
     icon: <CalendarDays className="h-8 w-8 text-primary" />,
-    title: "Guia de 30 dias para superar o vício",
+    title: "Guia plano de ação de 30 dias",
     description: "Um guia prático e diário para reestruturar seus hábitos e pensamentos, garantindo uma mudança sólida."
   },
   {
@@ -37,7 +37,7 @@ const benefits = [
   },
   {
     icon: <Phone className="h-8 w-8 text-primary" />,
-    title: "Contato de uma especialista na área",
+    title: "WhatsApp com a profissional 100% gratuito",
     description: "Contato direto via WhatsApp com uma especialista para tirar dúvidas, desabafar e receber dicas."
   }
 ];
@@ -56,7 +56,7 @@ const itemVariants = {
 
 const BackgroundIcon = ({ icon: Icon, className, delay }: { icon: React.ElementType, className: string, delay: number }) => (
   <motion.div
-    className={`absolute text-primary/10 ${className}`}
+    className={`absolute text-primary/10 blur-sm ${className}`}
     initial={{ opacity: 0, scale: 0.5, y: 50 }}
     whileInView={{ opacity: 0.1, scale: 1, y: 0 }}
     viewport={{ once: true, amount: 0.5 }}

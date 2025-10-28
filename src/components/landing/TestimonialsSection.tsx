@@ -42,7 +42,7 @@ const cardVariants = {
 
 const BackgroundIcon = ({ className, delay }: { className: string, delay: number }) => (
   <motion.div
-    className={`absolute text-white ${className}`}
+    className={`absolute text-white blur-sm ${className}`}
     initial={{ opacity: 0, scale: 0.5 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.8, delay, ease: "easeOut" }}

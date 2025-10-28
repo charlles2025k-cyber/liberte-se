@@ -8,7 +8,7 @@ import { BookOpen, Target, BrainCircuit, ShieldCheck } from 'lucide-react';
 
 const BackgroundIcon = ({ icon: Icon, className, delay }: { icon: React.ElementType, className: string, delay: number }) => (
   <motion.div
-    className={`absolute text-primary/10 ${className}`}
+    className={`absolute text-primary/10 blur-sm ${className}`}
     initial={{ opacity: 0, scale: 0.5, y: 50 }}
     whileInView={{ opacity: 0.1, scale: 1, y: 0 }}
     viewport={{ once: true, amount: 0.5 }}
@@ -53,9 +53,9 @@ export default function SolutionSection() {
                 src={guideImage.imageUrl}
                 alt={guideImage.description}
                 data-ai-hint={guideImage.imageHint}
-                width={600}
-                height={600}
-                className="rounded-lg shadow-2xl shadow-primary/20 transform hover:scale-105 transition-transform duration-500 w-full max-w-xl"
+                width={800}
+                height={800}
+                className="rounded-lg shadow-2xl shadow-primary/20 transform hover:scale-105 transition-transform duration-500 w-full max-w-2xl"
               />
             )}
           </div>
