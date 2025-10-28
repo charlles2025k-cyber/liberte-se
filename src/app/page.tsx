@@ -12,7 +12,7 @@ import AnimatedSection from '@/components/landing/AnimatedSection';
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-dvh bg-gradient-dark-blue text-foreground overflow-x-hidden">
+    <div className="flex flex-col min-h-dvh text-foreground overflow-x-hidden">
       <main className="flex-grow">
         <HeroSection />
         <AnimatedSection id="dores">
