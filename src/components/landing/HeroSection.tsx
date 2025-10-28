@@ -14,7 +14,7 @@ import {
 
 const BackgroundIcon = ({ icon: Icon, className, delay }: { icon: React.ElementType, className: string, delay: number }) => (
   <motion.div
-    className={`absolute text-white/5 ${className}`}
+    className={`absolute text-white/10 ${className}`}
     initial={{ opacity: 0, scale: 0.5 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.8, delay, ease: "easeOut" }}
@@ -32,7 +32,7 @@ export default function HeroSection() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <div className="absolute inset-0 z-0 opacity-50 blur-lg">
+      <div className="absolute inset-0 z-0">
         <BackgroundIcon icon={CircleDollarSign} className="h-24 w-24 top-[10%] left-[5%]" delay={0.9} />
         <BackgroundIcon icon={TrendingDown} className="h-20 w-20 top-[15%] right-[10%]" delay={1.1} />
         <BackgroundIcon icon={Banknote} className="h-28 w-28 top-[50%] left-[15%]" delay={1.3} />
@@ -65,7 +65,7 @@ export default function HeroSection() {
             Chegou a hora de dar um basta. Recupere o controle da sua vida e encontre a paz que você tanto merece com um método comprovado e acessível.
           </motion.p>
           <motion.div
-            className="mt-6 mb-4"
+            className="mt-8 mb-6"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
@@ -73,10 +73,10 @@ export default function HeroSection() {
             <Image
               src="https://i.postimg.cc/JzvQYcMF/Chat-GPT-Image-27-de-out-de-2025-22-54-02.png"
               alt="Homem se libertando do vício em apostas"
-              width={500}
-              height={500}
+              width={600}
+              height={600}
               priority
-              className="max-w-md md:max-w-lg"
+              className="max-w-lg md:max-w-xl"
               data-ai-hint="man breaking free gambling addiction"
             />
           </motion.div>

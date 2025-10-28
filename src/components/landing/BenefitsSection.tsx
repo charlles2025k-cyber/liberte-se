@@ -58,7 +58,7 @@ const BackgroundIcon = ({ icon: Icon, className, delay }: { icon: React.ElementT
   <motion.div
     className={`absolute text-primary/10 ${className}`}
     initial={{ opacity: 0, scale: 0.5, y: 50 }}
-    whileInView={{ opacity: 0.05, scale: 1, y: 0 }}
+    whileInView={{ opacity: 0.1, scale: 1, y: 0 }}
     viewport={{ once: true, amount: 0.5 }}
     transition={{ duration: 0.8, delay, ease: 'easeOut' }}
   >
