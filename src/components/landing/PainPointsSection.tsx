@@ -62,7 +62,7 @@ export default function PainPointsSection() {
         <div ref={targetRef} className="mt-16 max-w-lg mx-auto relative">
           <motion.div 
             style={{ scaleY }}
-            className="absolute left-[34px] top-0 bottom-0 w-0.5 bg-primary origin-top" 
+            className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-0.5 bg-primary origin-top" 
             aria-hidden="true"
           />
           
@@ -76,7 +76,7 @@ export default function PainPointsSection() {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
               >
-                <div className="relative group">
+                <div className="relative group flex-shrink-0">
                   <motion.div
                     className="absolute -top-5 left-1/2 -translate-x-1/2 z-20 flex items-center justify-center w-10 h-10 bg-primary text-primary-foreground font-bold text-lg rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                     initial={{ scale: 0.5 }}
@@ -84,9 +84,21 @@ export default function PainPointsSection() {
                   >
                     {index + 1}
                   </motion.div>
-                  <div className="flex-shrink-0 bg-card p-4 rounded-full border-2 border-primary/50 z-10 shadow-lg shadow-primary/10 group-hover:border-primary transition-colors duration-300">
+                   <motion.div 
+                    initial={{ scale: 1 }}
+                    whileInView={{ 
+                      scale: [1, 1.1, 1],
+                      boxShadow: [
+                        "0 0 0px hsl(var(--primary)/0.0)",
+                        "0 0 25px hsl(var(--primary)/0.6)",
+                        "0 0 0px hsl(var(--primary)/0.0)",
+                      ],
+                    }}
+                    viewport={{ once: true, amount: 'all' }}
+                    transition={{ duration: 1.5, repeat: Infinity, repeatDelay: 2, ease: "easeInOut" }}
+                    className="flex-shrink-0 bg-card p-4 rounded-full border-2 border-primary/50 z-10 group-hover:border-primary transition-colors duration-300">
                     {point.icon}
-                  </div>
+                  </motion.div>
                 </div>
 
                 <div className="pt-2">
@@ -96,7 +108,7 @@ export default function PainPointsSection() {
               </motion.div>
             ))}
             <motion.div 
-              className="absolute bottom-0 left-[32px] w-4 h-4"
+              className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-4"
               style={{ opacity: arrowOpacity }}
               aria-hidden="true"
             >
