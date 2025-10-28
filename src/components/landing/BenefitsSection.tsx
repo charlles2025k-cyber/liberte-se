@@ -1,6 +1,6 @@
 "use client";
 
-import { ShieldCheck, Target, Banknote, Smile } from "lucide-react";
+import { ShieldCheck, Target, Banknote, Smile, Users, LifeBuoy } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
@@ -24,6 +24,16 @@ const benefits = [
     icon: <Smile className="h-8 w-8 text-primary" />,
     title: "Recuperar a Confiança e a Paz",
     description: "Restaure a confiança de sua família e, o mais importante, a sua própria autoconfiança e paz interior."
+  },
+  {
+    icon: <Users className="h-8 w-8 text-primary" />,
+    title: "Acesso a uma Comunidade de Apoio",
+    description: "Junte-se a um grupo com milhares de pessoas que compartilham o mesmo objetivo, onde todos se ajudam mutuamente."
+  },
+  {
+    icon: <LifeBuoy className="h-8 w-8 text-primary" />,
+    title: "Contato com Especialistas",
+    description: "Tenha um canal direto para tirar dúvidas, desabafar e receber dicas de especialistas dedicados a te ajudar."
   }
 ];
 
