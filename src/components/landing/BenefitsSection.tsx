@@ -38,7 +38,7 @@ const benefits = [
   {
     icon: <Phone className="h-8 w-8 text-primary" />,
     title: "Contato com Especialista",
-    description: "Tenha suporte direto via WhatsApp para tirar dúvidas, desabafar e receber orientações de uma especialista na área."
+    description: "Sem pagar absolutamente nada, basta apenas fazer parte do método."
   }
 ];
 
