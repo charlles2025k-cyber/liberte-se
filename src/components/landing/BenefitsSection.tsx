@@ -79,7 +79,7 @@ export default function BenefitsSection() {
         <div ref={targetRef} className="mt-16 max-w-4xl mx-auto relative">
           <motion.div 
             style={{ scaleY }}
-            className="absolute left-7 top-0 bottom-0 w-0.5 bg-border/50 origin-top" 
+            className="absolute left-7 top-0 bottom-0 w-0.5 bg-primary origin-top" 
             aria-hidden="true"
           />
           
@@ -93,7 +93,7 @@ export default function BenefitsSection() {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
               >
-                <div className="flex-shrink-0 bg-card p-3 rounded-full border-2 border-primary/50 z-10 shadow-lg shadow-primary/10">
+                <div className="flex-shrink-0 bg-card p-3 rounded-full border-2 border-primary z-10 shadow-[0_0_25px_hsl(var(--primary)/0.6)]">
                   {benefit.icon}
                 </div>
                 <div>
@@ -107,7 +107,7 @@ export default function BenefitsSection() {
               style={{ opacity: arrowOpacity }}
               aria-hidden="true"
             >
-              <div className="w-0 h-0 border-l-4 border-l-transparent border-r-4 border-r-transparent border-t-[8px] border-t-primary/80 absolute bottom-[-8px] left-1/2 -translate-x-1/2"></div>
+              <div className="w-0 h-0 border-l-4 border-l-transparent border-r-4 border-r-transparent border-t-[8px] border-t-primary absolute bottom-[-8px] left-1/2 -translate-x-1/2"></div>
             </motion.div>
           </div>
         </div>
