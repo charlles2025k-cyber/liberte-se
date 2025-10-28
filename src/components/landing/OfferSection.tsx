@@ -34,7 +34,7 @@ export default function OfferSection() {
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto items-start">
+        <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto items-center">
           
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -68,13 +68,13 @@ export default function OfferSection() {
           </motion.div>
 
           <motion.div
-            className="relative"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            className="relative z-10"
+            initial={{ opacity: 0, y: 50, scale: 0.95 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1.05 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
               <div className="bg-primary text-primary-foreground font-bold py-1 px-4 rounded-full text-sm shadow-lg animate-bounce-slow">
                 MAIS POPULAR
               </div>
