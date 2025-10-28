@@ -51,7 +51,10 @@ export default function HeroSection() {
           >
             As apostas não roubam só o seu dinheiro.
             <br />
-            <span className="text-primary">Elas destroem sua paz e sua família.</span>
+            <span className="relative inline-block">
+              <span className="relative z-10">Elas destroem sua paz e sua família.</span>
+              <span className="absolute left-0 bottom-1 w-full h-1/2 bg-primary/80 -skew-y-2 z-0"></span>
+            </span>
           </motion.h1>
           <motion.p
             className="mt-4 text-lg md:text-xl text-muted-foreground max-w-3xl"
