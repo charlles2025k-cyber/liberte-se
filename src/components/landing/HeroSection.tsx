@@ -14,7 +14,7 @@ import {
 
 const BackgroundIcon = ({ icon: Icon, className, delay }: { icon: React.ElementType, className: string, delay: number }) => (
   <motion.div
-    className={`absolute text-white/10 blur-sm ${className}`}
+    className={`absolute text-white/10 blur-[1px] ${className}`}
     initial={{ opacity: 0, scale: 0.5 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.8, delay, ease: "easeOut" }}
@@ -73,10 +73,10 @@ export default function HeroSection() {
             <Image
               src="https://i.postimg.cc/JzvQYcMF/Chat-GPT-Image-27-de-out-de-2025-22-54-02.png"
               alt="Homem se libertando do vício em apostas"
-              width={800}
-              height={800}
+              width={600}
+              height={600}
               priority
-              className="max-w-2xl md:max-w-3xl"
+              className="max-w-xl md:max-w-2xl"
               data-ai-hint="man breaking free gambling addiction"
             />
           </motion.div>
