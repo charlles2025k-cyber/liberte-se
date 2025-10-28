@@ -40,6 +40,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.imagemhost.com.br',
+        port: '',
+        pathname: '/**',
+      }
     ],
   },
 };

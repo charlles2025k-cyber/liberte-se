@@ -1,6 +1,6 @@
 "use client";
 
-import { ShieldCheck } from "lucide-react";
+import Image from "next/image";
 
 export default function GuaranteeSection() {
   return (
@@ -8,7 +8,14 @@ export default function GuaranteeSection() {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center text-center md:text-left gap-8 bg-card border border-border/50 p-8 rounded-lg">
           <div className="flex-shrink-0">
-            <ShieldCheck className="h-24 w-24 text-primary" />
+            <Image
+              src="https://www.imagemhost.com.br/images/2025/04/17/Selo_de_Garantia_de_7_Dias_PNG_Transparente_Sem_Fundo.png"
+              alt="Selo de Garantia de 7 dias"
+              width={150}
+              height={150}
+              className="h-36 w-36"
+              data-ai-hint="7 day guarantee seal"
+            />
           </div>
           <div>
             <h2 className="text-2xl md:text-3xl font-headline font-bold">Sua Mudança Sem Nenhum Risco</h2>
