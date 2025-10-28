@@ -44,8 +44,13 @@ export default function ComparisonSection() {
                 ]}
                 check="no"
               />
-              <div className="mt-6 text-center">
-                <p className="text-4xl font-bold font-headline text-muted-foreground/80 line-through decoration-primary">R$ 200 - R$ 500</p>
+              <div className="mt-6 text-center relative">
+                <p className="relative text-4xl font-bold font-headline text-muted-foreground/80">
+                  <span className="opacity-50">R$ 200 - R$ 500</span>
+                  <span className="absolute inset-0 flex items-center justify-center">
+                    <span className="h-0.5 w-11/12 bg-primary animate-pulse" style={{boxShadow: '0 0 10px hsl(var(--primary))'}} />
+                  </span>
+                </p>
                 <p className="text-muted-foreground">por sessão</p>
               </div>
             </CardContent>
