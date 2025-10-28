@@ -34,7 +34,7 @@ export default function OfferSection() {
     } else {
       // Logic to proceed to checkout for the essential plan, for example:
       // window.location.href = "/checkout-essential";
-      alert("Redirecionando para o checkout do Plano Essencial!");
+      console.log("Redirecionando para o checkout do Plano Essencial!");
     }
   };
 
