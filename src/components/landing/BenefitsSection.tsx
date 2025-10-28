@@ -1,6 +1,6 @@
 "use client";
 
-import { ShieldCheck, Target, Banknote, Smile, Users, Phone } from "lucide-react";
+import { ShieldCheck, Target, Banknote, Smile, Users, Phone, CalendarDays } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
@@ -14,6 +14,11 @@ const benefits = [
     icon: <ShieldCheck className="h-8 w-8 text-primary" />,
     title: "Construir Barreiras Mentais",
     description: "Desenvolva um 'sistema imunológico' mental contra a vontade de apostar, baseado em técnicas de PNL e psicologia comportamental."
+  },
+  {
+    icon: <CalendarDays className="h-8 w-8 text-primary" />,
+    title: "Plano de Ação de 30 Dias",
+    description: "Um guia prático e diário para reestruturar seus hábitos e pensamentos, garantindo uma mudança sólida."
   },
   {
     icon: <Banknote className="h-8 w-8 text-primary" />,
@@ -32,8 +37,8 @@ const benefits = [
   },
   {
     icon: <Phone className="h-8 w-8 text-primary" />,
-    title: "Contato de uma especialista na área",
-    description: "Contato direto via WhatsApp com uma especialista para tirar dúvidas, desabafar e receber dicas."
+    title: "Contato com Especialista",
+    description: "Tenha suporte direto via WhatsApp para tirar dúvidas, desabafar e receber orientações de uma especialista na área."
   }
 ];
 
@@ -103,7 +108,7 @@ export default function BenefitsSection() {
                 variants={itemVariants}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.3 }}
               >
                 <div className="flex-shrink-0 bg-card p-3 rounded-full border-2 border-primary z-10 shadow-[0_0_25px_hsl(var(--primary)/0.6)]">
                   {benefit.icon}
