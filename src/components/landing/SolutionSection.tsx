@@ -53,9 +53,9 @@ export default function SolutionSection() {
                 src={guideImage.imageUrl}
                 alt={guideImage.description}
                 data-ai-hint={guideImage.imageHint}
-                width={500}
-                height={500}
-                className="rounded-lg shadow-2xl shadow-primary/20 transform hover:scale-105 transition-transform duration-500"
+                width={600}
+                height={600}
+                className="rounded-lg shadow-2xl shadow-primary/20 transform hover:scale-105 transition-transform duration-500 w-full max-w-lg"
               />
             )}
           </div>

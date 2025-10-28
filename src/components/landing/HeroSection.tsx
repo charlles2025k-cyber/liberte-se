@@ -73,10 +73,10 @@ export default function HeroSection() {
             <Image
               src="https://i.postimg.cc/JzvQYcMF/Chat-GPT-Image-27-de-out-de-2025-22-54-02.png"
               alt="Homem se libertando do vício em apostas"
-              width={400}
-              height={400}
+              width={500}
+              height={500}
               priority
-              className="max-w-sm md:max-w-md"
+              className="max-w-md md:max-w-lg"
               data-ai-hint="man breaking free gambling addiction"
             />
           </motion.div>
