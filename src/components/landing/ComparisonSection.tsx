@@ -2,17 +2,18 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, XCircle } from "lucide-react";
+import { motion } from "framer-motion";
 
-const FeatureList = ({ features, check }: { features: string[], check: 'yes' | 'no' }) => (
+const FeatureList = ({ features, check, textColor }: { features: string[], check: 'yes' | 'no', textColor?: string }) => (
   <ul className="space-y-3">
     {features.map((feature, index) => (
       <li key={index} className="flex items-center gap-3">
         {check === 'yes' ? (
           <CheckCircle className="h-5 w-5 text-primary" />
         ) : (
-          <XCircle className="h-5 w-5 text-muted-foreground/50" />
+          <XCircle className="h-5 w-5 text-white/70" />
         )}
-        <span className="text-muted-foreground">{feature}</span>
+        <span className={textColor || "text-muted-foreground"}>{feature}</span>
       </li>
     ))}
   </ul>
@@ -29,9 +30,9 @@ export default function ComparisonSection() {
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <Card className="border-border/50 bg-card/80">
+          <Card className="border-destructive/50 bg-[hsl(0,63%,20%)] text-white/90">
             <CardHeader>
-              <CardTitle className="font-headline text-2xl text-center">Terapia Tradicional</CardTitle>
+              <CardTitle className="font-headline text-2xl text-center text-white">Terapia Tradicional</CardTitle>
             </CardHeader>
             <CardContent>
               <FeatureList
@@ -43,39 +44,45 @@ export default function ComparisonSection() {
                   "Vergonha e dificuldade de se abrir"
                 ]}
                 check="no"
+                textColor="text-white/80"
               />
               <div className="mt-6 text-center relative">
-                <p className="relative text-4xl font-bold font-headline text-muted-foreground/80">
-                  <span className="opacity-50">R$ 200 - R$ 500</span>
-                  <span className="absolute inset-0 flex items-center justify-center">
-                    <span className="h-0.5 w-11/12 bg-primary animate-pulse-slow" style={{boxShadow: '0 0 10px hsl(var(--primary))'}} />
-                  </span>
+                <p className="relative text-4xl font-bold font-headline text-white/90">
+                  <span className="opacity-80">R$ 200 - R$ 500</span>
                 </p>
-                <p className="text-muted-foreground">por sessão</p>
+                <p className="text-white/70">por sessão</p>
               </div>
             </CardContent>
           </Card>
-          <Card className="border-primary border-2 shadow-lg shadow-primary/20 bg-card/80">
-            <CardHeader>
-              <CardTitle className="font-headline text-2xl text-center">Método Liberte-se</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <FeatureList
-                features={[
-                  "Resultados práticos em semanas",
-                  "Foco em ação e ferramentas",
-                  "Acesso vitalício ao material",
-                  "Leve com você para onde for",
-                  "Anônimo, discreto e no seu tempo"
-                ]}
-                check="yes"
-              />
-              <div className="mt-6 text-center">
-                <p className="text-4xl font-bold font-headline text-primary">Apenas R$ 19,90</p>
-                <p className="text-muted-foreground">pagamento único</p>
-              </div>
-            </CardContent>
-          </Card>
+          <motion.div
+            className="relative"
+            initial={{ y: 0 }}
+            whileInView={{ y: -10 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+          >
+            <Card className="border-primary border-2 shadow-lg shadow-primary/20 bg-card/80">
+              <CardHeader>
+                <CardTitle className="font-headline text-2xl text-center">Método Liberte-se</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <FeatureList
+                  features={[
+                    "Resultados práticos em semanas",
+                    "Foco em ação e ferramentas",
+                    "Acesso vitalício ao material",
+                    "Leve com você para onde for",
+                    "Anônimo, discreto e no seu tempo"
+                  ]}
+                  check="yes"
+                />
+                <div className="mt-6 text-center">
+                  <p className="text-4xl font-bold font-headline text-primary">Apenas R$ 19,90</p>
+                  <p className="text-muted-foreground">pagamento único</p>
+                </div>
+              </CardContent>
+            </Card>
+          </motion.div>
         </div>
       </div>
     </section>
