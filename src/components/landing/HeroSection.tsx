@@ -71,13 +71,13 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
           >
             <Image
-              src="https://i.postimg.cc/ZKRGYCPW/Chat-GPT-Image-27-de-out-de-2025-19-34-37.png"
-              alt="Homem quebrando uma corrente para se libertar do vício em apostas"
+              src="https://i.postimg.cc/mD4xV0xM/Chat-GPT-Image-27-de-out-de-2025-19-34-37.png"
+              alt="Homem se libertando do vício em apostas"
               width={400}
               height={400}
               priority
               className="max-w-sm md:max-w-md"
-              data-ai-hint="man breaking chains gambling addiction"
+              data-ai-hint="man breaking free gambling addiction"
             />
           </motion.div>
           <motion.div
