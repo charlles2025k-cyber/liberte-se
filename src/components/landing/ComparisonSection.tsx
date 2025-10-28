@@ -1,7 +1,7 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, XCircle } from "lucide-react";
+import { CheckCircle, X, XCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 const FeatureList = ({ features, check, textColor }: { features: string[], check: 'yes' | 'no', textColor?: string }) => (
@@ -9,9 +9,9 @@ const FeatureList = ({ features, check, textColor }: { features: string[], check
     {features.map((feature, index) => (
       <li key={index} className="flex items-center gap-3">
         {check === 'yes' ? (
-          <CheckCircle className="h-5 w-5 text-primary" />
+          <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
         ) : (
-          <XCircle className="h-5 w-5 text-white/70" />
+          <XCircle className="h-5 w-5 text-white/70 flex-shrink-0" />
         )}
         <span className={textColor || "text-muted-foreground"}>{feature}</span>
       </li>
@@ -29,28 +29,32 @@ export default function ComparisonSection() {
             Veja por que nosso método é a alternativa mais eficaz e acessível para quem busca resultados rápidos e duradouros.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <Card className="border-destructive/50 bg-[hsl(0,63%,20%)] text-white/90">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
+          <Card className="border-destructive/50 bg-[hsl(0,50%,12%)] text-white/90 flex flex-col">
             <CardHeader>
-              <CardTitle className="font-headline text-2xl text-center text-white">Terapia Tradicional</CardTitle>
+              <div className="flex items-center justify-center gap-4">
+                <div className="bg-destructive/80 rounded-full p-2">
+                  <X className="h-6 w-6 text-white" />
+                </div>
+                <CardTitle className="font-headline text-2xl text-white">Terapia Tradicional</CardTitle>
+              </div>
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex flex-col flex-grow">
               <FeatureList
                 features={[
-                  "Longo e demorado",
-                  "Foco em teoria, pouca prática",
-                  "Acesso limitado a sessões",
-                  "Sem suporte diário",
-                  "Vergonha e dificuldade de se abrir"
+                  "12 sessões com psicólogo especializado",
+                  "R$ 200 a R$ 300 por sessão",
+                  "Tempo de espera para agendar",
+                  "Deslocamento e horários fixos",
                 ]}
                 check="no"
                 textColor="text-white/80"
               />
-              <div className="mt-6 text-center relative">
-                <p className="relative text-4xl font-bold font-headline text-white/90">
-                  <span className="opacity-80">R$ 200 - R$ 500</span>
+              <div className="mt-6 text-center pt-6 border-t border-destructive/30 flex-grow flex flex-col justify-end">
+                <p className="text-sm text-white/70">Investimento Total:</p>
+                <p className="text-4xl font-bold font-headline text-red-400">
+                  R$ 2.400 a R$ 3.600
                 </p>
-                <p className="text-white/70">por sessão</p>
               </div>
             </CardContent>
           </Card>
@@ -61,11 +65,11 @@ export default function ComparisonSection() {
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.5 }}
           >
-            <Card className="border-primary border-2 shadow-lg shadow-primary/20 bg-card/80">
+            <Card className="border-primary border-2 shadow-lg shadow-primary/20 bg-card/80 flex flex-col h-full">
               <CardHeader>
                 <CardTitle className="font-headline text-2xl text-center">Método Liberte-se</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex flex-col flex-grow">
                 <FeatureList
                   features={[
                     "Resultados práticos em semanas",
@@ -76,7 +80,7 @@ export default function ComparisonSection() {
                   ]}
                   check="yes"
                 />
-                <div className="mt-6 text-center">
+                <div className="mt-6 text-center pt-6 flex-grow flex flex-col justify-end">
                   <p className="text-4xl font-bold font-headline text-primary">Apenas R$ 19,90</p>
                   <p className="text-muted-foreground">pagamento único</p>
                 </div>
