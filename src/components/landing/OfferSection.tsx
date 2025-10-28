@@ -10,14 +10,14 @@ import UpgradeOfferDialog from "./UpgradeOfferDialog";
 
 const EssentialPlanFeatures = [
   "Guia 'Superando o Vício'",
-  "Plano de Ação de 30 Dias",
+  "Guia plano de ação de 30 dias",
   "Ferramentas de Autocontrole",
 ];
 
 const CompletePlanFeatures = [
   "Guia 'Superando o Vício'",
   "Guia de 30 dias para organizar sua vida financeira",
-  "Plano de Ação de 30 Dias",
+  "Guia plano de ação de 30 dias",
   "Grupo exclusivo de WhatsApp",
   "WhatsApp com a profissional 100% gratuito",
   "Acesso vitalício",
