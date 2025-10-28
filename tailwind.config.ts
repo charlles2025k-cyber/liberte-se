@@ -103,7 +103,7 @@ export default {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'bounce-slow': 'bounce-slow 2s infinite',
+        'bounce-slow': 'bounce-slow 4s infinite',
       },
     },
   },
