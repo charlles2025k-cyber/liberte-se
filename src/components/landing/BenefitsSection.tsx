@@ -17,7 +17,7 @@ const benefits = [
   },
   {
     icon: <CalendarDays className="h-8 w-8 text-primary" />,
-    title: "Plano de Ação de 30 Dias",
+    title: "Guia de 30 dias para superar o vício",
     description: "Um guia prático e diário para reestruturar seus hábitos e pensamentos, garantindo uma mudança sólida."
   },
   {
@@ -37,7 +37,7 @@ const benefits = [
   },
   {
     icon: <Phone className="h-8 w-8 text-primary" />,
-    title: "Contato com Especialista",
+    title: "WhatsApp com a profissional 100% gratuito",
     description: "Sem pagar absolutamente nada, basta apenas fazer parte do método."
   }
 ];
