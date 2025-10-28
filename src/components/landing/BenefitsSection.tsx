@@ -78,6 +78,8 @@ export default function BenefitsSection() {
         <BackgroundIcon icon={ShieldCheck} className="w-56 h-56 top-[50%] right-[-10%] transform rotate-45" delay={0.4} />
         <BackgroundIcon icon={Banknote} className="w-32 h-32 bottom-[-25%] left-[5%]" delay={0.6} />
         <BackgroundIcon icon={Smile} className="w-24 h-24 top-[10%] right-[15%] transform rotate-12" delay={0.8} />
+        <BackgroundIcon icon={Users} className="w-48 h-48 bottom-[10%] right-[25%]" delay={1.0} />
+        <BackgroundIcon icon={Phone} className="w-28 h-28 top-[70%] left-[10%]" delay={1.2} />
       </div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto">
