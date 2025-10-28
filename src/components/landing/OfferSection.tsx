@@ -79,7 +79,7 @@ export default function OfferSection() {
                 MAIS POPULAR
               </div>
             </div>
-            <Card className="border-primary border-2 shadow-2xl shadow-primary/40 bg-card flex flex-col h-full">
+            <Card className="border-primary border-2 shadow-2xl shadow-primary/40 bg-[hsl(220,81%,10%)] flex flex-col h-full">
               <CardHeader className="text-center pt-10">
                 <CardTitle className="font-headline text-3xl">Plano Completo</CardTitle>
                 <CardDescription>A transformação completa com apoio contínuo</CardDescription>
@@ -102,7 +102,7 @@ export default function OfferSection() {
                 </ul>
                 <Button
                   size="lg"
-                  className="mt-auto w-full h-16 text-xl font-bold bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_25px_hsl(var(--primary)/0.6)] hover:shadow-[0_0_40px_hsl(var(--primary)/0.8)] transition-all duration-300 animate-pulse-slow"
+                  className="mt-auto w-full h-16 text-xl font-bold bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_25px_hsl(var(--primary)/0.6)] hover:shadow-[0_0_40px_hsl(var(--primary)/0.8)] transition-all duration-300 animate-bounce-slow rounded-full"
                 >
                   <Zap className="mr-2 h-6 w-6" />
                   QUERO O PLANO COMPLETO
