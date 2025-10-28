@@ -79,7 +79,7 @@ export default function OfferSection() {
                 MAIS POPULAR
               </div>
             </div>
-            <Card className="border-primary border-2 shadow-2xl shadow-primary/20 bg-card flex flex-col h-full">
+            <Card className="border-primary border-2 shadow-2xl shadow-primary/30 bg-card flex flex-col h-full">
               <CardHeader className="text-center pt-10">
                 <CardTitle className="font-headline text-3xl">Plano Completo</CardTitle>
                 <CardDescription>A transformação completa com apoio contínuo</CardDescription>
