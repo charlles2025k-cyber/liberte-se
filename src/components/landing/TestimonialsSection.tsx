@@ -1,10 +1,11 @@
 "use client";
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Star, Quote } from "lucide-react";
+import { Star, Quote, ArrowLeft, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const testimonials = [
   {
@@ -24,6 +25,24 @@ const testimonials = [
     quote: "Tentei de tudo, até terapia. Nada funcionou como esse guia. É direto, prático e sem enrolação. O preço é simbólico perto da liberdade que ele me deu. Recomendo demais!",
     location: "Porto Alegre, RS",
     avatar: "https://picsum.photos/seed/3/100/100"
+  },
+  {
+    name: "Fernando L.",
+    quote: "Perdi a confiança de todos ao meu redor. Estava isolado. O método me deu um caminho claro para seguir e a comunidade me mostrou que eu não estava sozinho. Recuperei minha vida.",
+    location: "Rio de Janeiro, RJ",
+    avatar: "https://picsum.photos/seed/4/100/100"
+  },
+  {
+    name: "Ana C.",
+    quote: "Achei que era só uma 'fase ruim', mas estava perdendo o controle. O guia me ajudou a entender a psicologia por trás do vício e me deu as ferramentas para parar antes que fosse tarde demais.",
+    location: "Salvador, BA",
+    avatar: "https://picsum.photos/seed/5/100/100"
+  },
+  {
+    name: "Marcos V.",
+    quote: "O anonimato foi essencial para mim. Segui o passo a passo no meu tempo, sem julgamentos. Hoje, o dinheiro que eu gastava em apostas, eu invisto no futuro da minha filha. Sou outra pessoa.",
+    location: "Curitiba, PR",
+    avatar: "https://picsum.photos/seed/6/100/100"
   }
 ];
 
@@ -54,7 +73,7 @@ const BackgroundIcon = ({ className, delay }: { className: string, delay: number
 export default function TestimonialsSection() {
   return (
     <section className="py-20 md:py-24 bg-card/50 relative overflow-hidden">
-      <div className="absolute inset-0 z-0 opacity-10">
+      <div className="absolute inset-0 z-0 opacity-5">
         <BackgroundIcon className="h-32 w-32 top-[10%] left-[5%]" delay={0.2} />
         <BackgroundIcon className="h-40 w-40 top-[40%] right-[-5%]" delay={0.4} />
         <BackgroundIcon className="h-24 w-24 bottom-[15%] left-[20%]" delay={0.6} />
@@ -66,34 +85,48 @@ export default function TestimonialsSection() {
             Veja o que pessoas como você, que tomaram a decisão de mudar, estão dizendo.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <motion.div
-              key={testimonial.name}
-              variants={cardVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-            >
-              <Card className="bg-card/80 border-border/50 flex flex-col hover:scale-105 transition-transform duration-300 h-full shadow-lg">
-                <CardContent className="p-6 flex-grow flex flex-col text-center items-center">
-                   <Avatar className="w-20 h-20 mb-4 border-4 border-primary/50">
-                    <AvatarImage src={testimonial.avatar} alt={testimonial.name} data-ai-hint="person face" />
-                    <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-                  </Avatar>
-                  <StarRating />
-                  <blockquote className="mt-4 text-muted-foreground flex-grow italic">
-                    “{testimonial.quote}”
-                  </blockquote>
-                  <footer className="mt-6">
-                    <p className="font-bold font-headline text-foreground">{testimonial.name}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.location}</p>
-                  </footer>
-                </CardContent>
-              </Card>
-            </motion.div>
-          ))}
+        <div className="mt-12">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto"
+          >
+            <CarouselContent className="-ml-4">
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index} className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3">
+                  <motion.div
+                    variants={cardVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    className="h-full"
+                  >
+                    <Card className="bg-card/80 border-border/50 flex flex-col hover:scale-105 transition-transform duration-300 h-full shadow-lg">
+                      <CardContent className="p-6 flex-grow flex flex-col text-center items-center">
+                        <Avatar className="w-20 h-20 mb-4 border-4 border-primary/50">
+                          <AvatarImage src={testimonial.avatar} alt={testimonial.name} data-ai-hint="person face" />
+                          <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                        </Avatar>
+                        <StarRating />
+                        <blockquote className="mt-4 text-muted-foreground flex-grow italic">
+                          “{testimonial.quote}”
+                        </blockquote>
+                        <footer className="mt-6">
+                          <p className="font-bold font-headline text-foreground">{testimonial.name}</p>
+                          <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                        </footer>
+                      </CardContent>
+                    </Card>
+                  </motion.div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="absolute left-[-2rem] md:left-[-3rem] top-1/2 -translate-y-1/2 text-foreground bg-background/50 hover:bg-background h-12 w-12" />
+            <CarouselNext className="absolute right-[-2rem] md:right-[-3rem] top-1/2 -translate-y-1/2 text-foreground bg-background/50 hover:bg-background h-12 w-12" />
+          </Carousel>
         </div>
       </div>
     </section>
