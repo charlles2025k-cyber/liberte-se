@@ -54,7 +54,7 @@ const BackgroundIcon = ({ className, delay }: { className: string, delay: number
 export default function TestimonialsSection() {
   return (
     <section className="py-20 md:py-24 bg-card/50 relative overflow-hidden">
-      <div className="absolute inset-0 z-0 opacity-30">
+      <div className="absolute inset-0 z-0 opacity-10 blur-lg">
         <BackgroundIcon className="h-32 w-32 top-[10%] left-[5%]" delay={0.2} />
         <BackgroundIcon className="h-40 w-40 top-[40%] right-[-5%]" delay={0.4} />
         <BackgroundIcon className="h-24 w-24 bottom-[15%] left-[20%]" delay={0.6} />
