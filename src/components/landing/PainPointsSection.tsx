@@ -62,7 +62,7 @@ export default function PainPointsSection() {
         <div ref={targetRef} className="mt-16 max-w-lg mx-auto relative">
           <motion.div 
             style={{ scaleY }}
-            className="absolute left-7 top-0 bottom-0 w-0.5 bg-primary origin-top" 
+            className="absolute left-[34px] top-0 bottom-0 w-0.5 bg-primary origin-top" 
             aria-hidden="true"
           />
           
@@ -96,7 +96,7 @@ export default function PainPointsSection() {
               </motion.div>
             ))}
             <motion.div 
-              className="absolute bottom-0 left-[26px] w-4 h-4"
+              className="absolute bottom-0 left-[32px] w-4 h-4"
               style={{ opacity: arrowOpacity }}
               aria-hidden="true"
             >
