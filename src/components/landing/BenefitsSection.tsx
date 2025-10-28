@@ -1,8 +1,19 @@
 "use client";
 
-import { ShieldCheck, Target, Banknote, Smile, Users, LifeBuoy } from "lucide-react";
+import { ShieldCheck, Target, Banknote, Smile, Users } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+
+const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
+      <path d="M16.75 13.96c.25.13.41.2.52.34.11.14.15.31.15.52s-.05.41-.15.54a.76.76 0 01-.52.34c-.14.05-.31.05-.52.05h-.14a4.35 4.35 0 01-2.29-.69 7.82 7.82 0 01-2.8-2.8A4.35 4.35 0 0110 9.39v-.14c0-.21.01-.38.05-.52a.76.76 0 01.34-.52c.13-.11.2-.15.34-.15.14 0 .28.01.41.05l.55.28c.13.08.23.18.29.31s.09.28.09.41a.86.86 0 01-.11.41c-.08.13-.18.23-.31.29l-.41.28c-.08.05-.14.12-.17.2a.9.9 0 00-.06.31c0 .07.01.14.05.21a2.8 2.8 0 00.52.79 2.8 2.8 0 00.79.52c.07.04.14.05.21.05a.9.9 0 00.31-.06c.08-.03.15-.09.2-.17l.28-.41a.86.86 0 01.29-.31c.13-.08.28-.11.41-.09l.28.55zM12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16z" />
+    </svg>
+  );
 
 const benefits = [
   {
@@ -31,7 +42,7 @@ const benefits = [
     description: "Junte-se a um grupo com milhares de pessoas que compartilham o mesmo objetivo, onde todos se ajudam mutuamente."
   },
   {
-    icon: <LifeBuoy className="h-8 w-8 text-primary" />,
+    icon: <WhatsAppIcon className="h-8 w-8 text-primary" />,
     title: "Contato com Especialistas",
     description: "Tenha um canal direto para tirar dúvidas, desabafar e receber dicas de especialistas dedicados a te ajudar."
   }
