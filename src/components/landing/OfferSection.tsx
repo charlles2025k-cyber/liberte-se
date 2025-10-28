@@ -11,7 +11,8 @@ import UpgradeOfferDialog from "./UpgradeOfferDialog";
 const EssentialPlanFeatures = [
   "Guia 'Superando o Vício'",
   "Guia plano de ação de 30 dias",
-  "Ferramentas de Autocontrole",
+  "Grupo exclusivo",
+  "1 ano de acesso"
 ];
 
 const CompletePlanFeatures = [
