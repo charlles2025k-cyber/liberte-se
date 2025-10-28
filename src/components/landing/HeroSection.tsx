@@ -52,7 +52,7 @@ export default function HeroSection() {
             As apostas não roubam só o seu dinheiro.
             <br />
             <span className="relative inline-block mt-2">
-              <span className="relative z-10 px-2">Elas destroem sua paz e sua família.</span>
+              <span className="relative z-10 px-2" style={{ textShadow: '0 0 5px rgba(0,0,0,0.5)' }}>Elas destroem sua paz e sua família.</span>
               <span className="absolute inset-0 bg-primary/80 -skew-y-2 z-0"></span>
             </span>
           </motion.h1>
@@ -88,7 +88,7 @@ export default function HeroSection() {
           >
             <Button
               size="lg"
-              className="h-16 px-8 text-xl font-bold bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_25px_hsl(var(--primary)/0.6)] hover:shadow-[0_0_40px_hsl(var(--primary)/0.8)] transition-all duration-300 rounded-full hover:scale-105"
+              className="h-16 px-8 text-xl font-bold bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_25px_hsl(var(--primary)/0.6)] transition-all duration-300 rounded-full hover:scale-105"
               asChild
             >
               <a href="#oferta">Quero me libertar agora</a>
