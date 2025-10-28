@@ -20,7 +20,7 @@ const BackgroundIcon = ({ icon: Icon, className, delay }: { icon: React.ElementT
 
 
 export default function SolutionSection() {
-  const guideImage = PlaceHolderImages.find(p => p.id === 'ebook-cover-3d');
+  const guideImage = PlaceHolderImages.find(p => p.id === 'man-transformed');
 
   return (
     <section className="py-20 md:py-24 bg-card/50 relative overflow-hidden">
