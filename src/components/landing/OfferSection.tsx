@@ -15,11 +15,12 @@ const EssentialPlanFeatures = [
 ];
 
 const CompletePlanFeatures = [
-  "Tudo do Plano Essencial",
-  "Acesso a Comunidade Exclusiva",
-  "Sessões de Acompanhamento em Grupo",
-  "Conteúdo sobre Prevenção de Recaídas",
-  "Suporte prioritário por e-mail",
+  "Guia 'Superando o Vício'",
+  "Guia de 30 dias para organizar sua vida financeira",
+  "Guia de 30 dias para superar o vício em apostas online",
+  "Grupo exclusivo de WhatsApp",
+  "WhatsApp com a profissional",
+  "Acesso vitalício",
 ];
 
 export default function OfferSection() {
@@ -65,7 +66,7 @@ export default function OfferSection() {
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <Card className="bg-card/80 border-border/50 flex flex-col h-full">
@@ -102,7 +103,7 @@ export default function OfferSection() {
               className="relative z-10"
               initial={{ opacity: 0, y: 50, scale: 0.95 }}
               whileInView={{ opacity: 1, y: 0, scale: 1.05 }}
-              viewport={{ once: true, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
