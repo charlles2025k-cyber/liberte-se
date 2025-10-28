@@ -75,11 +75,11 @@ export default function OfferSection() {
             transition={{ duration: 0.5, delay: 0.4 }}
           >
             <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-              <div className="bg-primary text-primary-foreground font-bold py-1 px-4 rounded-full text-sm shadow-lg">
+              <div className="bg-primary text-primary-foreground font-bold py-1 px-4 rounded-full text-sm shadow-lg animate-bounce-slow">
                 MAIS POPULAR
               </div>
             </div>
-            <Card className="border-primary border-2 shadow-2xl shadow-primary/30 bg-card flex flex-col h-full">
+            <Card className="border-primary border-2 shadow-2xl shadow-primary/40 bg-card flex flex-col h-full">
               <CardHeader className="text-center pt-10">
                 <CardTitle className="font-headline text-3xl">Plano Completo</CardTitle>
                 <CardDescription>A transformação completa com apoio contínuo</CardDescription>
