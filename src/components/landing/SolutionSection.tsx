@@ -43,7 +43,7 @@ export default function SolutionSection() {
             <p className="mt-4 text-muted-foreground">
               Sem julgamentos, sem promessas milagrosas. Apenas ferramentas eficazes que já transformaram a vida de centenas de pessoas, e que agora estão ao seu alcance.
             </p>
-            <Button size="lg" className="mt-8 h-12 px-8 text-lg font-bold" asChild>
+            <Button size="lg" className="mt-8 h-12 px-8 text-lg font-bold rounded-full hover:scale-105 transition-transform" asChild>
               <a href="#oferta">Quero meu guia agora</a>
             </Button>
           </div>
