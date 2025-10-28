@@ -37,8 +37,8 @@ const benefits = [
   },
   {
     icon: <Phone className="h-8 w-8 text-primary" />,
-    title: "WhatsApp com a profissional 100% gratuito",
-    description: "Sem pagar absolutamente nada, basta apenas fazer parte do método."
+    title: "Contato de uma especialista na área",
+    description: "Contato direto via WhatsApp com uma especialista para tirar dúvidas, desabafar e receber dicas."
   }
 ];
 
