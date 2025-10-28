@@ -17,9 +17,9 @@ const EssentialPlanFeatures = [
 const CompletePlanFeatures = [
   "Guia 'Superando o Vício'",
   "Guia de 30 dias para organizar sua vida financeira",
-  "Guia de 30 dias para superar o vício em apostas online",
+  "Plano de Ação de 30 Dias",
   "Grupo exclusivo de WhatsApp",
-  "WhatsApp com a profissional",
+  "WhatsApp com a profissional 100% gratuito",
   "Acesso vitalício",
 ];
 
