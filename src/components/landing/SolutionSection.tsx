@@ -8,9 +8,9 @@ import { BookOpen, Target, BrainCircuit, ShieldCheck } from 'lucide-react';
 
 const BackgroundIcon = ({ icon: Icon, className, delay }: { icon: React.ElementType, className: string, delay: number }) => (
   <motion.div
-    className={`absolute text-primary/10 blur-sm ${className}`}
+    className={`absolute text-primary/10 blur-[2px] ${className}`}
     initial={{ opacity: 0, scale: 0.5, y: 50 }}
-    whileInView={{ opacity: 0.1, scale: 1, y: 0 }}
+    whileInView={{ opacity: 0.05, scale: 1, y: 0 }}
     viewport={{ once: true, amount: 0.5 }}
     transition={{ duration: 0.8, delay, ease: 'easeOut' }}
   >
@@ -20,7 +20,7 @@ const BackgroundIcon = ({ icon: Icon, className, delay }: { icon: React.ElementT
 
 
 export default function SolutionSection() {
-  const guideImage = PlaceHolderImages.find(p => p.id === 'man-transformed');
+  const guideImage = PlaceHolderImages.find(p => p.id === 'ebook-cover-3d');
 
   return (
     <section className="py-20 md:py-24 bg-card/50 relative overflow-hidden">
@@ -55,7 +55,7 @@ export default function SolutionSection() {
                 data-ai-hint={guideImage.imageHint}
                 width={800}
                 height={800}
-                className="rounded-lg shadow-2xl shadow-primary/20 transform hover:scale-105 transition-transform duration-500 w-full max-w-2xl"
+                className="rounded-lg shadow-2xl shadow-primary/20 transform hover:scale-105 transition-transform duration-500 w-full max-w-sm md:max-w-xl"
               />
             )}
           </div>
