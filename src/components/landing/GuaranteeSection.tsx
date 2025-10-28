@@ -6,6 +6,10 @@ export default function GuaranteeSection() {
   return (
     <section className="py-20 md:py-24 bg-transparent">
       <div className="container mx-auto px-4">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-headline font-bold">GARANTIA</h2>
+            <p className="mt-4 text-lg text-muted-foreground">Sua tranquilidade é nossa prioridade.</p>
+        </div>
         <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center text-center md:text-left gap-8 bg-card border border-border/50 p-8 rounded-lg">
           <div className="flex-shrink-0">
             <Image
