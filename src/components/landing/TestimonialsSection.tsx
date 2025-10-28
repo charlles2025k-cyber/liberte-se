@@ -61,7 +61,7 @@ export default function TestimonialsSection() {
       </div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-headline font-bold">A prova de que a mudança é real</h2>
+          <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">A prova de que a mudança é real</h2>
           <p className="mt-4 text-lg text-muted-foreground">
             Veja o que pessoas como você, que tomaram a decisão de mudar, estão dizendo.
           </p>
