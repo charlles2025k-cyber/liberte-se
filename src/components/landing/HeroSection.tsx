@@ -32,7 +32,7 @@ export default function HeroSection() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <div className="absolute inset-0 z-0 opacity-50 blur-sm">
+      <div className="absolute inset-0 z-0 opacity-50 blur-lg">
         <BackgroundIcon icon={CircleDollarSign} className="h-24 w-24 top-[10%] left-[5%]" delay={0.9} />
         <BackgroundIcon icon={TrendingDown} className="h-20 w-20 top-[15%] right-[10%]" delay={1.1} />
         <BackgroundIcon icon={Banknote} className="h-28 w-28 top-[50%] left-[15%]" delay={1.3} />
