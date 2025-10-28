@@ -45,7 +45,7 @@ export default function ComparisonSection() {
                 check="no"
               />
               <div className="mt-6 text-center">
-                <p className="text-4xl font-bold font-headline text-muted-foreground/80 line-through">R$ 200 - R$ 500</p>
+                <p className="text-4xl font-bold font-headline text-muted-foreground/80 line-through decoration-primary">R$ 200 - R$ 500</p>
                 <p className="text-muted-foreground">por sessão</p>
               </div>
             </CardContent>
