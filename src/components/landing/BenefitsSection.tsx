@@ -7,7 +7,7 @@ import { useRef } from "react";
 const benefits = [
   {
     icon: <Target className="h-8 w-8 text-primary" />,
-    title: "Entender a Raiz da Compulsão",
+    title: "entender a raiz da compulsão",
     description: "Identifique os gatilhos emocionais e psicológicos que te levam a apostar e aprenda a neutralizá-los."
   },
   {
@@ -56,7 +56,7 @@ const itemVariants = {
 
 const BackgroundIcon = ({ icon: Icon, className, delay }: { icon: React.ElementType, className: string, delay: number }) => (
   <motion.div
-    className={`absolute text-primary/10 blur-sm ${className}`}
+    className={`absolute text-primary/10 blur-[1px] ${className}`}
     initial={{ opacity: 0, scale: 0.5, y: 50 }}
     whileInView={{ opacity: 0.1, scale: 1, y: 0 }}
     viewport={{ once: true, amount: 0.5 }}
