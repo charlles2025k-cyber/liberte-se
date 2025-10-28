@@ -71,7 +71,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
           >
             <Image
-              src="https://i.postimg.cc/mD4xV0xM/Chat-GPT-Image-27-de-out-de-2025-19-34-37.png"
+              src="https://i.postimg.cc/JzvQYcMF/Chat-GPT-Image-27-de-out-de-2025-22-54-02.png"
               alt="Homem se libertando do vício em apostas"
               width={400}
               height={400}
