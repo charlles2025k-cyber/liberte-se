@@ -60,7 +60,7 @@ export default function OfferSection() {
                     </li>
                   ))}
                 </ul>
-                <Button size="lg" className="mt-auto w-full h-14 text-lg font-bold rounded-full" variant="outline">
+                <Button size="lg" className="mt-auto w-full h-14 text-lg font-bold" variant="outline">
                   Começar agora
                 </Button>
               </CardContent>
@@ -102,7 +102,7 @@ export default function OfferSection() {
                 </ul>
                 <Button
                   size="lg"
-                  className="mt-auto w-full h-16 text-xl font-bold bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_25px_hsl(var(--primary)/0.6)] hover:shadow-[0_0_40px_hsl(var(--primary)/0.8)] transition-all duration-300 animate-bounce-slow rounded-full"
+                  className="mt-auto w-full h-16 text-xl font-bold bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_25px_hsl(var(--primary)/0.6)] hover:shadow-[0_0_40px_hsl(var(--primary)/0.8)] transition-all duration-300 animate-pulse-slow"
                 >
                   <Zap className="mr-2 h-6 w-6" />
                   QUERO O PLANO COMPLETO
