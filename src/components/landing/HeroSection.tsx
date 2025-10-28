@@ -14,7 +14,7 @@ import {
 
 const BackgroundIcon = ({ icon: Icon, className, delay }: { icon: React.ElementType, className: string, delay: number }) => (
   <motion.div
-    className={`absolute text-white/10 blur-sm ${className}`}
+    className={`absolute text-white/10 blur-[1px] ${className}`}
     initial={{ opacity: 0, scale: 0.5 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.8, delay, ease: "easeOut" }}
@@ -73,10 +73,10 @@ export default function HeroSection() {
             <Image
               src="https://i.postimg.cc/JzvQYcMF/Chat-GPT-Image-27-de-out-de-2025-22-54-02.png"
               alt="Homem se libertando do vício em apostas"
-              width={500}
-              height={500}
+              width={600}
+              height={600}
               priority
-              className="w-full max-w-xs md:max-w-sm"
+              className="w-full max-w-md md:max-w-lg"
               data-ai-hint="man breaking free gambling addiction"
             />
           </motion.div>
@@ -88,12 +88,18 @@ export default function HeroSection() {
           >
             <Button
               size="lg"
-              className="h-16 px-8 text-xl font-bold bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_25px_hsl(var(--primary)/0.6)] transition-all duration-300 rounded-full animate-pulse-slow hover:scale-105"
+              className="h-16 px-8 text-xl font-bold bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_25px_hsl(var(--primary)/0.6)] transition-all duration-300 rounded-full animate-bounce-slow"
               asChild
             >
               <a href="#oferta">Quero me libertar agora</a>
             </Button>
-            <p className="mt-4 text-sm text-muted-foreground">Acesso imediato e 100% seguro.</p>
+            <div className="mt-4 flex items-center gap-2 text-sm text-muted-foreground">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+              </span>
+              <span>Acesso imediato e 100% seguro.</span>
+            </div>
           </motion.div>
         </div>
       </div>
