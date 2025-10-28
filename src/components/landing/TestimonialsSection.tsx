@@ -1,9 +1,8 @@
 "use client";
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Star, Quote, ArrowLeft, ArrowRight } from "lucide-react";
+import { Star, Quote } from "lucide-react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
@@ -43,6 +42,24 @@ const testimonials = [
     quote: "O anonimato foi essencial para mim. Segui o passo a passo no meu tempo, sem julgamentos. Hoje, o dinheiro que eu gastava em apostas, eu invisto no futuro da minha filha. Sou outra pessoa.",
     location: "Curitiba, PR",
     avatar: "https://picsum.photos/seed/6/100/100"
+  },
+  {
+    name: "Eduardo S.",
+    quote: "Estava cético, mas a garantia de 7 dias me convenceu a tentar. Foi a melhor decisão que já tomei. O plano de ação é muito claro e o suporte no grupo fez toda a diferença.",
+    location: "Fortaleza, CE",
+    avatar: "https://picsum.photos/seed/7/100/100"
+  },
+  {
+    name: "Lúcia R.",
+    quote: "A parte de reorganização financeira foi crucial. Eu não só parei de apostar, como aprendi a cuidar do meu dinheiro. Hoje tenho uma reserva de emergência, algo que parecia impossível.",
+    location: "Brasília, DF",
+    avatar: "https://picsum.photos/seed/8/100/100"
+  },
+  {
+    name: "Paulo G.",
+    quote: "O contato com a especialista pelo WhatsApp é um diferencial enorme. Ter alguém pra conversar na hora da fraqueza, sem julgamento, foi o que me manteve firme no processo. Recomendo!",
+    location: "Manaus, AM",
+    avatar: "https://picsum.photos/seed/9/100/100"
   }
 ];
 
@@ -61,7 +78,7 @@ const cardVariants = {
 
 const BackgroundIcon = ({ className, delay }: { className: string, delay: number }) => (
   <motion.div
-    className={`absolute text-white blur-sm ${className}`}
+    className={`absolute text-white blur-[2px] ${className}`}
     initial={{ opacity: 0, scale: 0.5 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.8, delay, ease: "easeOut" }}
@@ -124,8 +141,8 @@ export default function TestimonialsSection() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="absolute left-[-2rem] md:left-[-3rem] top-1/2 -translate-y-1/2 text-foreground bg-background/50 hover:bg-background h-12 w-12" />
-            <CarouselNext className="absolute right-[-2rem] md:right-[-3rem] top-1/2 -translate-y-1/2 text-foreground bg-background/50 hover:bg-background h-12 w-12" />
+            <CarouselPrevious className="absolute -left-2 sm:left-0 md:-left-4 top-1/2 -translate-y-1/2 text-foreground bg-background/50 hover:bg-background h-10 w-10 z-10" />
+            <CarouselNext className="absolute -right-2 sm:right-0 md:-right-4 top-1/2 -translate-y-1/2 text-foreground bg-background/50 hover:bg-background h-10 w-10 z-10" />
           </Carousel>
         </div>
       </div>
