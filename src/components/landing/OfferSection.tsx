@@ -24,11 +24,28 @@ const CompletePlanFeatures = [
 
 export default function OfferSection() {
   const [isOfferDialogOpen, setIsOfferDialogOpen] = useState(false);
+  const [hasSeenOffer, setHasSeenOffer] = useState(false);
+
+  const handleEssentialPlanClick = () => {
+    if (!hasSeenOffer) {
+      setIsOfferDialogOpen(true);
+    } else {
+      // Logic to proceed to checkout for the essential plan, for example:
+      // window.location.href = "/checkout-essential";
+      alert("Redirecionando para o checkout do Plano Essencial!");
+    }
+  };
+
+  const handleCloseDialog = () => {
+    setIsOfferDialogOpen(false);
+    setHasSeenOffer(true);
+  };
+
   return (
     <>
       <UpgradeOfferDialog
         isOpen={isOfferDialogOpen}
-        onClose={() => setIsOfferDialogOpen(false)}
+        onClose={handleCloseDialog}
       />
       <section className="py-20 md:py-24 bg-card/50" id="oferta">
         <div className="container mx-auto px-4">
@@ -73,7 +90,7 @@ export default function OfferSection() {
                     size="lg"
                     className="mt-auto w-full h-14 text-lg font-bold"
                     variant="outline"
-                    onClick={() => setIsOfferDialogOpen(true)}
+                    onClick={handleEssentialPlanClick}
                   >
                     Começar agora
                   </Button>
