@@ -41,7 +41,7 @@ const testimonials = [
     name: "Marcos V.",
     quote: "O anonimato foi essencial para mim. Segui o passo a passo no meu tempo, sem julgamentos. Hoje, o dinheiro que eu gastava em apostas, eu invisto no futuro da minha filha. Sou outra pessoa.",
     location: "Curitiba, PR",
-    avatar: "https://picsum.photos/seed/6/100/100"
+    avatar: "https://i.postimg.cc/FKww4GBs/441491488-7468228916590797-6212947232026406410-n.jpg"
   },
   {
     name: "Eduardo S.",
