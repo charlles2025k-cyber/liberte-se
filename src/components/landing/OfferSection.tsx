@@ -20,7 +20,7 @@ const CompletePlanFeatures = [
   "Guia de 30 dias para organizar sua vida financeira",
   "Guia plano de ação de 30 dias",
   "Grupo exclusivo de WhatsApp",
-  "WhatsApp com a profissional 100% gratuito",
+  "Acesso ao aplicativo de rotina de desintoxicação em 30D",
   "Acesso vitalício",
 ];
 
