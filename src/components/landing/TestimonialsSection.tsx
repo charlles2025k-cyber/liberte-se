@@ -29,7 +29,7 @@ const testimonials = [
     name: "Fernando L.",
     quote: "Perdi a confiança de todos ao meu redor. Estava isolado. O método me deu um caminho claro para seguir e a comunidade me mostrou que eu não estava sozinho. Recuperei minha vida.",
     location: "Rio de Janeiro, RJ",
-    avatar: "https://picsum.photos/seed/4/100/100"
+    avatar: "https://i.postimg.cc/7ZF5TrGr/pessoa-3.jpg"
   },
   {
     name: "Ana C.",
