@@ -11,7 +11,7 @@ const testimonials = [
     name: "Carlos M.",
     quote: "Eu estava no fundo do poço, devendo dinheiro para agiotas. O guia foi minha luz. Em 2 meses, paguei minhas dívidas e hoje tenho nojo de site de aposta. Obrigado!",
     location: "São Paulo, SP",
-    avatar: "https://picsum.photos/seed/1/100/100"
+    avatar: "https://i.postimg.cc/htkX7Rzn/pessoa-1.jpg"
   },
   {
     name: "Juliana F.",
