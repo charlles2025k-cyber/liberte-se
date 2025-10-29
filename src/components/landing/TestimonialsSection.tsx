@@ -57,7 +57,7 @@ const testimonials = [
   },
   {
     name: "Paulo G.",
-    quote: "O contato com a especialista pelo WhatsApp é um diferencial enorme. Ter alguém pra conversar na hora da fraqueza, sem julgamento, foi o que me manteve firme no processo. Recomendo!",
+    quote: "O aplicativo de hábitos foi um diferencial enorme. Ter uma ferramenta para acompanhar meu progresso na hora da fraqueza, sem julgamento, foi o que me manteve firme no processo. Recomendo!",
     location: "Manaus, AM",
     avatar: "https://i.postimg.cc/cLfNLpfC/60211134-2619438641417870-4622641384782823424-n.jpg"
   }
