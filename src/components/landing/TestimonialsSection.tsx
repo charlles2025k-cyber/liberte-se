@@ -47,19 +47,19 @@ const testimonials = [
     name: "Eduardo S.",
     quote: "Estava cético, mas a garantia de 7 dias me convenceu a tentar. Foi a melhor decisão que já tomei. O plano de ação é muito claro e o suporte no grupo fez toda a diferença.",
     location: "Fortaleza, CE",
-    avatar: "https://picsum.photos/seed/7/100/100"
+    avatar: "https://i.postimg.cc/QMpNvB6H/494309948-23999896209648622-1336558538798848649-n.jpg"
   },
   {
     name: "Lúcia R.",
     quote: "A parte de reorganização financeira foi crucial. Eu não só parei de apostar, como aprendi a cuidar do meu dinheiro. Hoje tenho uma reserva de emergência, algo que parecia impossível.",
     location: "Brasília, DF",
-    avatar: "https://picsum.photos/seed/8/100/100"
+    avatar: "https://i.postimg.cc/k5xMLVjD/469524768-8846242608791415-5586544226657586042-n.jpg"
   },
   {
     name: "Paulo G.",
     quote: "O contato com a especialista pelo WhatsApp é um diferencial enorme. Ter alguém pra conversar na hora da fraqueza, sem julgamento, foi o que me manteve firme no processo. Recomendo!",
     location: "Manaus, AM",
-    avatar: "https://picsum.photos/seed/9/100/100"
+    avatar: "https://i.postimg.cc/cLfNLpfC/60211134-2619438641417870-4622641384782823424-n.jpg"
   }
 ];
 
