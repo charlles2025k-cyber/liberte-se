@@ -30,7 +30,7 @@ export default function GuaranteeSection() {
         >
           <div className="flex-shrink-0">
             <Image
-              src="https://www.imagemhost.com.br/images/2025/04/17/Selo_de_Garantia_de_7_Dias_PNG_Transparente_Sem_Fundo.png"
+              src="https://i.postimg.cc/FKww4GBs/441491488-7468228916590797-6212947232026406410-n.jpg"
               alt="Selo de Garantia de 7 dias"
               width={150}
               height={150}
