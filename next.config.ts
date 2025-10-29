@@ -45,6 +45,12 @@ const nextConfig: NextConfig = {
         hostname: 'www.imagemhost.com.br',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.pilatesparagestantes.com.br',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
