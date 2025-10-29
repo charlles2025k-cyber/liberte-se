@@ -1,6 +1,6 @@
 "use client";
 
-import { ShieldCheck, Target, Banknote, Smile, Users, Phone, CalendarDays } from "lucide-react";
+import { ShieldCheck, Target, Banknote, Smile, Users, Smartphone, CalendarDays } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
@@ -36,9 +36,9 @@ const benefits = [
     description: "Junte-se a um grupo com milhares de pessoas que compartilham o mesmo objetivo, onde todos se ajudam mutuamente."
   },
   {
-    icon: <Phone className="h-8 w-8 text-primary" />,
-    title: "WhatsApp com a profissional 100% gratuito",
-    description: "Contato direto via WhatsApp com uma especialista para tirar dúvidas, desabafar e receber dicas."
+    icon: <Smartphone className="h-8 w-8 text-primary" />,
+    title: "Aplicativo inteligente de rotina",
+    description: "Aplicativo inteligente de rotina para seguir para auxiliar na desintoxicação."
   }
 ];
 
@@ -56,7 +56,7 @@ const itemVariants = {
 
 const BackgroundIcon = ({ icon: Icon, className, delay }: { icon: React.ElementType, className: string, delay: number }) => (
   <motion.div
-    className={`absolute text-primary/10 blur-[1px] ${className}`}
+    className={`absolute text-primary/10 blur-sm ${className}`}
     initial={{ opacity: 0, scale: 0.5, y: 50 }}
     whileInView={{ opacity: 0.1, scale: 1, y: 0 }}
     viewport={{ once: true, amount: 0.5 }}
@@ -84,7 +84,7 @@ export default function BenefitsSection() {
         <BackgroundIcon icon={Banknote} className="w-32 h-32 bottom-[-25%] left-[5%]" delay={0.6} />
         <BackgroundIcon icon={Smile} className="w-24 h-24 top-[10%] right-[15%] transform rotate-12" delay={0.8} />
         <BackgroundIcon icon={Users} className="w-48 h-48 bottom-[10%] right-[25%]" delay={1.0} />
-        <BackgroundIcon icon={Phone} className="w-28 h-28 top-[70%] left-[10%]" delay={1.2} />
+        <BackgroundIcon icon={Smartphone} className="w-28 h-28 top-[70%] left-[10%]" delay={1.2} />
       </div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto">
