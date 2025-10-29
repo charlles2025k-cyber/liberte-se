@@ -30,7 +30,7 @@ export default function GuaranteeSection() {
         >
           <div className="flex-shrink-0">
             <Image
-              src="https://www.pilatesparagestantes.com.br/wp-content/uploads/2023/11/selo-de-garantia-de-7-dias-png-transparente-sem-fundo-1.png"
+              src="https://i.postimg.cc/HWvvD68M/Selo-de-Garantia-de-7-Dias-PNG-Transparente-Sem-Fundo-1.png"
               alt="Selo de Garantia de 7 dias"
               width={150}
               height={150}
