@@ -21,6 +21,10 @@ const faqs = [
         answer: "Não. Uma das grandes vantagens é a discrição. Você pode seguir o método no seu tempo, de forma 100% anônima e confidencial, sem precisar se expor."
     },
     {
+        question: "Como eu vou ter alguma ajuda?",
+        answer: "Sim, terá um grupo de apoio junto com outras pessoas que estão com o mesmo objetivo que o seu pra se ajudarem."
+    },
+    {
         question: "E se eu tiver uma recaída?",
         answer: "O guia te prepara para isso. Recaídas podem acontecer, mas você terá as ferramentas para identificar o que aconteceu, aprender com o erro e voltar para o caminho certo rapidamente, sem se deixar abater pela culpa."
     },
