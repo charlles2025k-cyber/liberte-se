@@ -23,7 +23,7 @@ const testimonials = [
     name: "Ricardo P.",
     quote: "Tentei de tudo, até terapia. Nada funcionou como esse guia. É direto, prático e sem enrolação. O preço é simbólico perto da liberdade que ele me deu. Recomendo demais!",
     location: "Porto Alegre, RS",
-    avatar: "https://picsum.photos/seed/3/100/100"
+    avatar: "https://i.postimg.cc/vZJ46wgR/pessoa-2.jpg"
   },
   {
     name: "Fernando L.",
