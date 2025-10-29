@@ -81,7 +81,7 @@ export default function ComparisonSection() {
                   check="yes"
                 />
                 <div className="mt-6 text-center pt-6 flex-grow flex flex-col justify-end">
-                  <p className="text-4xl font-bold font-headline text-primary">Apenas R$ 19,90</p>
+                  <p className="text-4xl font-bold font-headline text-primary">Valor único</p>
                   <p className="text-muted-foreground">pagamento único</p>
                 </div>
               </CardContent>
