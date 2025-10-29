@@ -17,7 +17,7 @@ const testimonials = [
     name: "Juliana F.",
     quote: "Meu casamento estava acabando. Eu mentia para meu marido todos os dias. Esse método não só me salvou do vício, mas salvou minha família. Hoje vivemos em paz.",
     location: "Belo Horizonte, MG",
-    avatar: "https://picsum.photos/seed/2/100/100"
+    avatar: "https://i.postimg.cc/fRGV0Qth/pessoa-4.jpg"
   },
   {
     name: "Ricardo P.",
