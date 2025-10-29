@@ -82,7 +82,7 @@ export default function ComparisonSection() {
                 />
                 <div className="mt-6 text-center pt-6 flex-grow flex flex-col justify-end">
                   <p className="text-4xl font-bold font-headline text-primary">Valor único</p>
-                  <p className="text-muted-foreground">pagamento único</p>
+                  <p className="text-muted-foreground">Sem pegadinhas</p>
                 </div>
               </CardContent>
             </Card>
