@@ -35,7 +35,7 @@ const testimonials = [
     name: "Ana C.",
     quote: "Achei que era só uma 'fase ruim', mas estava perdendo o controle. O guia me ajudou a entender a psicologia por trás do vício e me deu as ferramentas para parar antes que fosse tarde demais.",
     location: "Salvador, BA",
-    avatar: "https://picsum.photos/seed/5/100/100"
+    avatar: "https://i.postimg.cc/qRM6pX6r/485723492-29298183353106240-5378275578060271176-n.jpg"
   },
   {
     name: "Marcos V.",
